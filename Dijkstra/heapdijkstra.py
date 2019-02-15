@@ -1,3 +1,9 @@
+# Dijkstra's algorithm for finding the shortest path.
+# Improved version with the usage of heaps.
+
+# Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
+#   2019-02-15 Initial coding
+
 import heapq
 
 def make_graph(file):
