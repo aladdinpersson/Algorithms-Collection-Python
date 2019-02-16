@@ -1,4 +1,5 @@
 # Algorithms-Collection-Python
+Whenever I face an interesting problem I document the algorithm that I learned to solve it. Hopefully my list will increase as time goes on.
 
 # Graph theory
 * [Dijkstra Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/dijkstra/djikstra.py) **- "Naive" implementation **
