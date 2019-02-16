@@ -1,10 +1,11 @@
-# Prims algorithm for finding minimal spanning tree (MST) of a graph
+# Prims algorithm for finding minimal spanning tree (MST) of a graph. Optimized version using Heaps!
 
-# This doesn't work atm
+# This code is functional but needs:
+#   * Comments
+#   * Clean up code a bit
 
 # Aladdin Persson <aladdin.persson@hotmail.com>
 #   2019-02-16 Initial programming
-
 
 
 import heapq
@@ -22,10 +23,9 @@ def load_graph(file='edges.txt'):
 
 
     G = {line: [tuple(map(int, tup.split()))[::-1] for tup in line_list[1:]
-                                if int(tup.split()[0]) == line] for line in range(1, int(num_nodes) + 1)}
+                                if (int(tup.split()[0]) == line or int(tup.split()[1]) == line)]
+                                for line in range(1, int(num_nodes) + 1)}
 
-    # G = {int(line.split()[0]): [tuple(map(int, tup.split()))[::-1] for tup in line_list[1:]
-    #                             if int(tup.split()[0]) == int(line.split()[0])] for line in line_list[1:]}
 
     f.close()
     return G, int(num_nodes)
@@ -45,22 +45,24 @@ def prims_algo(G, num_nodes):
     heapq.heapify(heap)
 
     while unvisited_nodes:
-        #print(f'Length of unvisited nodes is {len(unvisited_nodes)}')
+        (cost, n2, n1) = heapq.heappop(heap)
+        new_node = None
 
-        #Can be confusing: n1 connects to n2, cost is the edge between them
-        (cost, destination_node, origin_node) = heapq.heappop(heap)
+        if n1 in unvisited_nodes and n2 in visited_nodes:
+            new_node = n1
 
-        if destination_node in unvisited_nodes:
-            unvisited_nodes.remove(destination_node)
-            visited_nodes.append(destination_node)
+        elif n1 in visited_nodes and n2 in unvisited_nodes:
+            new_node = n2
+
+        if new_node != None:
+            unvisited_nodes.remove(new_node)
+            visited_nodes.append(new_node)
             tot_cost += cost
 
-            for each in G[destination_node]:
+            for each in G[new_node]:
                 heapq.heappush(heap, each)
 
-    print(f'total cost is: {tot_cost}')
-
-
+    return tot_cost
 
 if __name__ == '__main__':
     print('Computing minimal spanning tree using Prims Algorithm')
@@ -68,6 +70,6 @@ if __name__ == '__main__':
     G, num_nodes = load_graph()
     print(f'Our loaded graph is: {G}')
 
-    prims_algo(G, num_nodes)
+    tot_cost = prims_algo(G, num_nodes)
 
-    #print(f'total cost of minimum spanning tree is {tot_cost}')
+    print(f'total cost of minimum spanning tree is {tot_cost}')
