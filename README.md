@@ -12,8 +12,6 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 # Mathematics
 * [Karatsuba Multiplication](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/karatsuba.py)
 
-https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/prims/primheap.py
-
 # Other
 * [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py)
 
