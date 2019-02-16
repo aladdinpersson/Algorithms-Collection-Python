@@ -23,4 +23,4 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 
 
 # Contributing
-I appreciate feedback on potential improvements and potential errors!
+I appreciate feedback on potential improvements and/or if you see an error that I've made!
