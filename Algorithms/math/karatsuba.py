@@ -1,5 +1,5 @@
 # Purpose is to implement karatsuba multiplication, a way of computing
-# x * y which is faster than the normal method taught which has a time complexity of O(n^2) which
+# x * y which is faster than the normal method taught at school which has a time complexity of O(n^2) which
 # is very slow. This method produces a way which is much faster approx. O(n^(1.59))
 
 # import random to check if implementation is correct

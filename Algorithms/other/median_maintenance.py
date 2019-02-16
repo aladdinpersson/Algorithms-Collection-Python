@@ -1,5 +1,16 @@
+# Purpose of median_maintenance is given numbers, x then y, w, etc, maintain the median.
+
+# Programmed by Aladdin Persson
+#   2019-02-16 <aladdin.persson at hotmail dot com>
+
+# This is an optimized version using heap
+
 # note: heapq is a min-heap that is why we do -x, also we want all small values in the maxheap
 # and all large values in the minheap so that we can take the value on the top as our median
+
+# Improvements to be made:
+#   * Do it without the use of globals
+#   * Comment code
 
 import heapq
 

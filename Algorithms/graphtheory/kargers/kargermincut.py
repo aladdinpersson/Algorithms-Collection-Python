@@ -1,3 +1,14 @@
+# Purpose of Karger's algorithm is to compute the minimum cut of a connected graph.
+# If you have nodes connected to edges, where should the graph be cut so that we cut
+# the minimum amount of edges possible
+
+# Programmed by Aladdin Persson
+#   2019-01-25 Initial programming
+
+# Improvements to be made:
+# * Comment code better
+# * See if there is a datastructure to be used to make it faster
+
 import random, copy
 
 random.seed(1)
