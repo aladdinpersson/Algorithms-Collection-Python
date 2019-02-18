@@ -2,11 +2,10 @@
 
 # This code is functional but needs:
 #   * Comments
-#   * Clean up code a bit
+#   * Clean up code a bit (loadgraph especially and new_node != None part could perhaps be cleaner)
 
 # Aladdin Persson <aladdin.persson@hotmail.com>
 #   2019-02-16 Initial programming
-
 
 import heapq
 
@@ -40,6 +39,7 @@ def prims_algo(G, num_nodes):
 
     unvisited_nodes.remove(start)
     visited_nodes.append(start)
+    MST = [start]
 
     heap = G[start]
     heapq.heapify(heap)
@@ -57,12 +57,13 @@ def prims_algo(G, num_nodes):
         if new_node != None:
             unvisited_nodes.remove(new_node)
             visited_nodes.append(new_node)
+            MST.append(new_node)
             tot_cost += cost
 
             for each in G[new_node]:
                 heapq.heappush(heap, each)
 
-    return tot_cost
+    return MST, tot_cost
 
 if __name__ == '__main__':
     print('Computing minimal spanning tree using Prims Algorithm')
@@ -70,6 +71,10 @@ if __name__ == '__main__':
     G, num_nodes = load_graph()
     print(f'Our loaded graph is: {G}')
 
-    tot_cost = prims_algo(G, num_nodes)
+    start = time.time()
+    MST, tot_cost = prims_algo(G, num_nodes)
 
+    tot = time.time() - start
+    print(tot)
+    print(f'the minimum spanning tree is:  {MST}')
     print(f'total cost of minimum spanning tree is {tot_cost}')
