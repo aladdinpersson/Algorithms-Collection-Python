@@ -66,15 +66,12 @@ def prims_algo(G, num_nodes):
     return MST, tot_cost
 
 if __name__ == '__main__':
-    print('Computing minimal spanning tree using Prims Algorithm')
+    print('---- Computing minimal spanning tree using Prims Algorithm ---- \n')
 
     G, num_nodes = load_graph()
-    print(f'Our loaded graph is: {G}')
+    print(f'Our loaded graph is: {G} \n')
 
-    start = time.time()
     MST, tot_cost = prims_algo(G, num_nodes)
 
-    tot = time.time() - start
-    print(tot)
-    print(f'the minimum spanning tree is:  {MST}')
-    print(f'total cost of minimum spanning tree is {tot_cost}')
+    print(f'The minimum spanning tree is:  {MST}')
+    print(f'Total cost of minimum spanning tree is {tot_cost}')
