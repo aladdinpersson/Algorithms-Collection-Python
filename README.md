@@ -1,6 +1,9 @@
 # Algorithms-Collection-Python
 Whenever I face an interesting problem I document the algorithm that I learned to solve it. Hopefully my list will increase as time goes on.
 
+# Dynamic Programming
+*
+
 # Graph theory
 * [Dijkstra Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/dijkstra/djikstra.py) **- Naive implementation**
 * [Dijkstra Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/dijkstra/heapdijkstra.py) **- Heap implementation**
@@ -20,7 +23,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 
 # Other
 * [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py)
-* [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/Huffman/Huffman.py)
+* [Huffman Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/Huffman/Huffman.py)
 
 
 # Sorting algorithms
