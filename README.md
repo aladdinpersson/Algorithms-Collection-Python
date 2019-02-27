@@ -20,6 +20,8 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 
 # Other
 * [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py)
+* [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/Huffman/Huffman.py)
+
 
 # Sorting algorithms
 * [Bubble sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/bubblesort.py)
