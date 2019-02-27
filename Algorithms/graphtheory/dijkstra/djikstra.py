@@ -9,10 +9,11 @@ def make_graph(file):
 
     line_list = f.readlines()
 
-    # Found on mukeshmithrakumar github, thought this was really clean..
+    # Found on mukeshmithrakumar github, thought this was clean..
     # populate the graph using data from the text file via dictionary comprehensions
     G = {int(line.split()[0]): {(int(tup.split(',')[0])): int(tup.split(',')[1])
                                 for tup in line.split()[1:] if tup} for line in line_list if line}
+
     f.close()
     return G
 
