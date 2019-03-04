@@ -1,7 +1,6 @@
 # Bubblesort sorting algorithm. This is not a very efficient sorting algorithm, T(n) = O(n^2).
-# Programmed by Dino Persson 2019-01-23 <aladdin.persson at hotmail dot com>
 
-import random
+# Programmed by Aladdin Persson 2019-01-23 <aladdin.persson at hotmail dot com>
 
 def bubblesort(L):
     n = len(L) - 1

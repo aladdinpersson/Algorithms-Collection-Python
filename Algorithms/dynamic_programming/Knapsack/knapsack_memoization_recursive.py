@@ -35,16 +35,17 @@ def knapsack(n, C, W, v, items):
 
     return result, items
 
-# Small example
-weight = [1,2,4,2,5]
-value = [5,3,5,3,2]
-num_objects = len(weight)
-capacity = 3
+if __name__ == '__main__':
+    # Run a small example
+    weight = [1,2,4,2,5]
+    value = [5,3,5,3,2]
+    num_objects = len(weight)
+    capacity = 3
 
-arr = [[None for i in range(capacity)] for j in range(num_objects)]
+    arr = [[None for i in range(capacity)] for j in range(num_objects)]
 
-total_val_and_items = knapsack(num_objects, capacity, weight, value, [])
-print(total_val_and_items)
+    total_val_and_items = knapsack(num_objects, capacity, weight, value, [])
+    print(total_val_and_items)
 
 # with open('p01_c.txt') as f_capacity:
 #     capacity = int(f_capacity.readline())

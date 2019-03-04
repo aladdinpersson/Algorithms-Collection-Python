@@ -30,40 +30,14 @@ def knapsack(n, C, W, v, items):
     return result, items
 
 
-# Small example
-weight = [1,2,4,2,5]
-value = [5,3,5,3,2]
-num_objects = len(weight)
-capacity = 3
+if __name__ == '__main__':
+    # Run small example
+    weight = [1,2,4,2,5]
+    value = [5,3,5,3,2]
+    num_objects = len(weight)
+    capacity = 3
 
-arr = [[None for i in range(capacity)] for j in range(num_objects)]
+    arr = [[None for i in range(capacity)] for j in range(num_objects)]
 
-total_val_and_items = knapsack(num_objects, capacity, weight, value, [])
-print(total_val_and_items)
-
-# items = []
-#
-# with open('p01_c.txt') as f_capacity:
-#     capacity = int(f_capacity.readline())
-#
-# with open('p01_p.txt') as f_values:
-#     values = []
-#
-#     for line in f_values:
-#         values.append(int(line))
-#
-# with open('p01_w.txt') as f_weights:
-#     weights = []
-#
-#     for line in f_weights:
-#         weights.append(int(line))
-#
-# num_objects = len(weights)
-# start1=time.time()
-# total_val, items = knapsack(num_objects, capacity, weights, values, [])
-# print(items)
-#
-# print(total_val)
-#
-# print(time.time()-start1)
-# print(KS.knapsack(weights,values).solve(capacity))
+    total_val_and_items = knapsack(num_objects, capacity, weight, value, [])
+    print(total_val_and_items)# items = []
