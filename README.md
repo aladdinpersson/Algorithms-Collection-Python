@@ -6,6 +6,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/MyAlgorithmBranch/Algorithms/dynamic_programming/Knapsack/knapsack_memoization_recursive.py) **- Recursive with memoization implementation**
 
 # Graph theory
+* [Bellman-ford Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/MyAlgorithmBranch/Algorithms/graphtheory/bellman-ford/bellman_ford.py) **- Unoptimized implementation **
 * [Dijkstra Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/dijkstra/djikstra.py) **- Naive implementation**
 * [Dijkstra Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/dijkstra/heapdijkstra.py) **- Heap implementation**
 * [Karger's Minimum cut](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kargers/kargermincut.py)
