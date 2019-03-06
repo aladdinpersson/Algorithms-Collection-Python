@@ -2,4 +2,4 @@ language: python
 # Default Python version is usually 2.7
 python: 3.6
 
-script: python test_sorting.py
+script: python Algorithm_tests/sorting_tests/test_sorting.py
