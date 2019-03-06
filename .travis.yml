@@ -1,5 +1,8 @@
 language: python
 # Default Python version is usually 2.7
 python: 3.6
+before_install:
+    - cd Algorithm_tests/sorting_tests
 
-script: python test_sorting.py
+script:
+    - python test_sorting.py
