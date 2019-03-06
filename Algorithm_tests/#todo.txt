@@ -1,4 +1,0 @@
-Make tests to see if implementations have been done so correctly.
-
-This will make it easier to see if future improvements solving the same original problems are in fact correctly implemented!
-
