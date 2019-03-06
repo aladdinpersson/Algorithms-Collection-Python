@@ -1,4 +1,4 @@
-https://travis-ci.com/AladdinPerzon/Algorithms-Collection-Python.svg?branch=master
+[![Build Status](https://travis-ci.com/AladdinPerzon/Algorithms-Collection-Python.svg?branch=master)](https://travis-ci.com/AladdinPerzon/Algorithms-Collection-Python)
 
 # Algorithms-Collection-Python
 Whenever I face an interesting problem I document the algorithm that I learned to solve it. Hopefully my list will increase as time goes on.
