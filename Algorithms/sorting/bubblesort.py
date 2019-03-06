@@ -8,9 +8,6 @@ Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
 '''
 
 def bubblesort(L):
-    if len(L) < 1:
-        raise("List needs elements")
-
     swapped = True
 
     while swapped:
