@@ -1,6 +1,6 @@
 # Import folder where sorting algorithms
 import sys
-sys.path.append('../../Algorithms/sorting')
+sys.path.append('Algorithms/sorting')
 
 # from bubblesort import bubblesort
 
@@ -25,10 +25,12 @@ L5_sorted = []
 # Bubblesort
 def test_bubblesort():
     assert bubblesort(L1) == L1_sorted, "Not correctly sorted"
+    assert bubblesort(L2) == L2_sorted, "Not correctly sorted"
+    assert bubblesort(L3) == L3_sorted, "Not correctly sorted"
     assert bubblesort(L4) == L4_sorted, "Not correctly sorted"
     assert bubblesort(L4) == L4_sorted, "Not correctly sorted"
-    assert bubblesort(L4) == L4_sorted, "Not correctly sorted"
-    assert bubblesort(L4) == L4_sorted, "Not correctly sorted"
+
+test_bubblesort()
 
 # Selectionsort
 # assert sorted(L4) == L4_sorted, "Not correctly sorted"
