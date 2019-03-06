@@ -1,28 +1,28 @@
-# Bubblesort sorting algorithm. This is not a very efficient sorting algorithm, T(n) = O(n^2).
-# Programmed by Dino Persson 2019-01-23 <aladdin.persson at hotmail dot com>
+'''
+Bubblesort sorting algorithm. This is not a very efficient sorting algorithm, T(n) = O(n^2).
 
-import random
+Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
+*  2019-01-23 Initial code
+*  2019-03-05 Improved code by having swapped, while-loop and raise error
+
+'''
 
 def bubblesort(L):
-    n = len(L) - 1
+    if len(L) < 1:
+        raise("List needs elements")
 
-    for i in range(n):
-        for j in range(n - i):
+    swapped = True
+
+    while swapped:
+        swapped = False
+
+        for j in range(len(L) - 1):
             if L[j] > L[j+1]:
                 L[j], L[j + 1] = L[j+1], L[j]
-
-
+                swapped = True
     return L
 
-
-# Test if implemented correctly comparing to Pythons built in sort function
-for i in range(100):
-    # Generate a random list
-    L = random.sample(range(999999), i)
-    L_sorted = bubblesort(L)
-    correctly_sorted = sorted(L)
-    if L_sorted != correctly_sorted:
-        raise("This was not correctly sorted.")
-
-# If error was not raised then it means they were all correctly sorted
-print("All was correctly sorted.")
+if __name__ == '__main__':
+    unsorted = [5,2,4,6,1,3]
+    sorted = bubblesort(unsorted)
+    print(sorted)
