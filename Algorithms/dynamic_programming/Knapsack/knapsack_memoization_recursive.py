@@ -46,31 +46,3 @@ if __name__ == '__main__':
 
     total_val_and_items = knapsack(num_objects, capacity, weight, value, [])
     print(total_val_and_items)
-
-# with open('p01_c.txt') as f_capacity:
-#     capacity = int(f_capacity.readline())
-#
-# with open('p01_p.txt') as f_values:
-#     values = []
-#
-#     for line in f_values:
-#         values.append(int(line))
-#
-# with open('p01_w.txt') as f_weights:
-#     weights = []
-#
-#     for line in f_weights:
-#         weights.append(int(line))
-#
-# # = []
-# num_objects = len(weights)
-# arr = [[None for i in range(capacity)] for j in range(num_objects)]
-# start1=time.time()
-# total_val,items = knapsack(num_objects, capacity, weights, values)
-# print(total_val)
-# print(items)
-# print(time.time() - start1)
-# print(KS.knapsack(weights,values).solve(capacity))
-# import knapsack as KS
-# import time
-

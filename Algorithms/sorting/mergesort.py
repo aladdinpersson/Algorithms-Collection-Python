@@ -11,19 +11,15 @@ def merge_sort(array):
 
 
 def merge(left, right):
-
     result = []
     left_pointer = right_pointer = 0
 
     while left_pointer < len(left) and right_pointer < len(right):
-
         if left[left_pointer] < right[right_pointer]:
-
             result.append(left[left_pointer])
             left_pointer += 1
 
         else:
-
             result.append(right[right_pointer])
             right_pointer += 1
 
@@ -31,7 +27,6 @@ def merge(left, right):
     result.extend(right[right_pointer:])
 
     return result
-
 
 def main():
     array = [5, 4, 3, 2, 1]
