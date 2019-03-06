@@ -31,6 +31,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 # Sorting algorithms
 * [Bubble sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/bubblesort.py)
 * [Insertion sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/insertionsort.py)
+* [Selection sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/selectionsort.py)
 * [Merge sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/mergesort.py)
 * [Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/quicksort.py)
 
