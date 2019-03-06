@@ -2,8 +2,6 @@
 import sys
 sys.path.append('Algorithms/sorting')
 
-# from bubblesort import bubblesort
-
 from bubblesort import bubblesort
 
 L1 = [1,2,3,4,5,6,7,8,9]
