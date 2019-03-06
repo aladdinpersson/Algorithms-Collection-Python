@@ -1,0 +1,5 @@
+language: python
+# Default Python version is usually 2.7
+python: 3.6
+
+script: Algorithm_tests/sorting_tests/test_sorting.py $TEST_SUITE
