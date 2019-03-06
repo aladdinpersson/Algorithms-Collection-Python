@@ -5,4 +5,4 @@ before_install:
     - cd Algorithm_tests/sorting_tests
 
 script:
-    - test_sorting.py
+    - python test_sorting.py
