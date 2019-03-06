@@ -67,13 +67,12 @@ def dijkstra(G, start, end):
 
 
 
-G = make_graph('dijkstraData.txt')
+#G = make_graph('dijkstraData.txt')
 
-# G =  {1:{2:10, 3:20},
-#       2:{4:40},
-#       3:{4:5},
-#       4:{}}
-
+G =  {1:{2:10, 3:20},
+      2:{4:40},
+      3:{4:5},
+      4:{}}
 print(f'Current graph is: {G}')
 path, shortest = dijkstra(G, 1, 4)
 

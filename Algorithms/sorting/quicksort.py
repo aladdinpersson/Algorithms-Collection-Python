@@ -1,5 +1,4 @@
-# Quicksort with pivot always using first index as pivot
-
+# quicksort with pivot always using first index as pivot
 def quicksort_firstpivot(x):
     global count_comparisons
 
@@ -24,7 +23,7 @@ def quicksort_firstpivot(x):
     result = left + right
     return result
 
-# Quicksort with pivot always using last index as pivot
+# quicksort with pivot always using last index as pivot
 def quicksort_lastpivot(x):
     global count_comparisons
 
@@ -53,8 +52,6 @@ def quicksort_lastpivot(x):
     return result
 
 def find_median(x):
-    # this is horrible.
-
     if len(x) % 2 == 0:
         middle_idx = len(x) // 2 - 1
     if len(x) % 2 != 0:
