@@ -3,7 +3,11 @@ import sys
 import unittest
 
 # For importing from different folders
-sys.path.append('../../Algorithms/graphtheory/bellman-ford')
+# OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
+sys.path.append('Algorithms/graphtheory/bellman-ford')
+
+# If run from local:
+#sys.path.append('../../Algorithms/graphtheory/bellman-ford')
 
 from bellman_ford import bellman_ford, make_graph
 
@@ -11,7 +15,7 @@ class test_sorting(unittest.TestCase):
 
     def test_loadgraph(self):
         correct_graph = {1: {2: 5, 3: 10}, 2: {4: -5}, 3: {4: 15}}
-        graph = make_graph('test_graph.txt')
+        graph = make_graph('Algorithm_tests/graphtheory_tests/test_graph.txt')
 
         self.assertEqual(graph, correct_graph)
 
