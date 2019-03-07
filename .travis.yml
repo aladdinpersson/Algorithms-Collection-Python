@@ -13,8 +13,8 @@ before_install:
     - cd Algorithm_tests/sorting_tests
 
 # Install awesome_bot for README.md broken link checking
-#before_script:
-#  - gem install awesome_bot
+before_script:
+  - gem install awesome_bot
 
 script:
 #     - awesome_bot README.md --allow-dupe --allow-redirect
