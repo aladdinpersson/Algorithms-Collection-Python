@@ -18,4 +18,4 @@ before_script:
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
-#    - python test_sorting.py
+     - python Algorithm_tests/sorting_tests/test_sorting.py
