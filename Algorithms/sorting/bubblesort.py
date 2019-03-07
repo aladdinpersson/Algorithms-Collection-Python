@@ -8,13 +8,14 @@ Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
 '''
 def bubblesort(L):
     swapped = True
-
+    swapped = True
     while swapped:
         swapped = False
 
         for j in range(len(L) - 1):
-            if L[j] > L[j+1]:
+            if L[j] > L[j+1] and [Lj+1]< L[j]:
                 L[j], L[j + 1] = L[j+1], L[j]
+
                 swapped = True
     return L
 
