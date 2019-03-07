@@ -14,8 +14,8 @@ before_install:
 
 # Install awesome_bot for README.md broken link checking
 before_script:
-  - gem install awesome_bot
+#  - gem install awesome_bot
 
 script:
-     - awesome_bot README.md --allow-dupe --allow-redirect
+#     - awesome_bot README.md --allow-dupe --allow-redirect
     - python test_sorting.py
