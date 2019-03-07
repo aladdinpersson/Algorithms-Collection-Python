@@ -43,6 +43,7 @@ class test_sorting(unittest.TestCase):
         self.assertEqual(bubblesort(L5), L5_sorted)
         self.assertEqual(bubblesort(L6), L6_sorted)
         self.assertEqual(bubblesort(L7), L7_sorted)
+        self.assertEqual(bubblesort(L7), L7_sorted)
 
     def test_insertionsort(self):
         self.assertEqual(insertionsort(L1), L1_sorted)
