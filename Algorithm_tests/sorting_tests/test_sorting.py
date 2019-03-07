@@ -31,6 +31,11 @@ L4_sorted = [1,3,3,5,6,7]
 L5 = []
 L5_sorted = []
 
+L6 = [-1,-2,-3]
+L6_sorted = [-3,-2,-1]
+
+L7 = [-5,-7,-1,-3,-4]
+L7_sorted = [-7,-5,-4,-3,-1]
 
 class test_sorting(unittest.TestCase):
 
@@ -40,6 +45,9 @@ class test_sorting(unittest.TestCase):
         self.assertEqual(bubblesort(L3), L3_sorted)
         self.assertEqual(bubblesort(L4), L4_sorted)
         self.assertEqual(bubblesort(L5), L5_sorted)
+        self.assertEqual(bubblesort(L6), L6_sorted)
+        self.assertEqual(bubblesort(L7), L7_sorted)
+        self.assertEqual(bubblesort(L7), L7_sorted)
 
     def test_insertionsort(self):
         self.assertEqual(insertionsort(L1), L1_sorted)
@@ -47,6 +55,8 @@ class test_sorting(unittest.TestCase):
         self.assertEqual(insertionsort(L3), L3_sorted)
         self.assertEqual(insertionsort(L4), L4_sorted)
         self.assertEqual(insertionsort(L5), L5_sorted)
+        self.assertEqual(insertionsort(L6), L6_sorted)
+        self.assertEqual(insertionsort(L7), L7_sorted)
 
     def test_mergesort(self):
         self.assertEqual(merge_sort(L1), L1_sorted)
@@ -54,6 +64,8 @@ class test_sorting(unittest.TestCase):
         self.assertEqual(merge_sort(L3), L3_sorted)
         self.assertEqual(merge_sort(L4), L4_sorted)
         self.assertEqual(merge_sort(L5), L5_sorted)
+        self.assertEqual(merge_sort(L6), L6_sorted)
+        self.assertEqual(merge_sort(L7), L7_sorted)
 
     def test_quicksort(self):
         self.assertEqual(quicksort_firstpivot(L1), L1_sorted)
@@ -61,6 +73,8 @@ class test_sorting(unittest.TestCase):
         self.assertEqual(quicksort_firstpivot(L3), L3_sorted)
         self.assertEqual(quicksort_firstpivot(L4), L4_sorted)
         self.assertEqual(quicksort_firstpivot(L5), L5_sorted)
+        self.assertEqual(quicksort_firstpivot(L6), L6_sorted)
+        self.assertEqual(quicksort_firstpivot(L7), L7_sorted)
 
     def test_selectionsort(self):
         self.assertEqual(selectionsort(L1), L1_sorted)
@@ -68,6 +82,8 @@ class test_sorting(unittest.TestCase):
         self.assertEqual(selectionsort(L3), L3_sorted)
         self.assertEqual(selectionsort(L4), L4_sorted)
         self.assertEqual(selectionsort(L5), L5_sorted)
+        self.assertEqual(selectionsort(L6), L6_sorted)
+        self.assertEqual(selectionsort(L7), L7_sorted)
 
 
 if __name__ == '__main__':
