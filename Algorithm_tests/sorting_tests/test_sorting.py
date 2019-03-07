@@ -4,10 +4,10 @@ import unittest
 
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
-# sys.path.append('Algorithms/sorting')
+sys.path.append('Algorithms/sorting')
 
 # If run from local:
-sys.path.append('../../Algorithms/sorting')
+# sys.path.append('../../Algorithms/sorting')
 
 from bubblesort import bubblesort
 from insertionsort import insertionsort

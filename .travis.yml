@@ -19,4 +19,4 @@ before_script:
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
      - python Algorithm_tests/sorting_tests/test_sorting.py
-     - python Algorithm_tests/Algorithm_tests/graphtheory_tests/bellman_ford_test.py
+     - python Algorithm_tests/graphtheory_tests/bellman_ford_test.py
