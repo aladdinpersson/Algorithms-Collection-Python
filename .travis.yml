@@ -13,7 +13,7 @@ before_install:
     - cd Algorithm_tests/sorting_tests
 
 # Install awesome_bot for README.md broken link checking
-before_script:
+#before_script:
 #  - gem install awesome_bot
 
 script:
