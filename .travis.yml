@@ -4,10 +4,10 @@ language: python
 python: 3.6
 
 # Install ruby to get gem command
-before_install:
-  - sudo apt-add-repository -y ppa:brightbox/ruby-ng
-  - sudo apt-get -y update
-  - sudo apt-get -y install ruby-full
+#before_install:
+#  - sudo apt-add-repository -y ppa:brightbox/ruby-ng
+#  - sudo apt-get -y update
+#  - sudo apt-get -y install ruby-full
 
 #before_install:
 #    - cd Algorithm_tests/sorting_tests
