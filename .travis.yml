@@ -9,8 +9,8 @@ before_install:
   - sudo apt-get -y update
   - sudo apt-get -y install ruby-full
 
-before_install:
-    - cd Algorithm_tests/sorting_tests
+#before_install:
+#    - cd Algorithm_tests/sorting_tests
 
 # Install awesome_bot for README.md broken link checking
 before_script:
@@ -18,4 +18,4 @@ before_script:
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
-    - python test_sorting.py
+#    - python test_sorting.py
