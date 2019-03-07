@@ -6,7 +6,6 @@ Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
 *  2019-03-05 Improved code by having swapped, while-loop and raise error
 
 '''
-
 def bubblesort(L):
     swapped = True
 
@@ -20,6 +19,6 @@ def bubblesort(L):
     return L
 
 if __name__ == '__main__':
-    unsorted = [5,2,4,6,1,3]
+    unsorted = [5,2,4,6,1,4]
     sorted = bubblesort(unsorted)
     print(sorted)
