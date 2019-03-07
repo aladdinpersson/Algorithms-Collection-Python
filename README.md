@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/AladdinPerzon/Algorithms-Collection-Python.svg?branch=master)](https://travis-ci.com/AladdinPerzon/Algorithms-Collection-Python) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Algorithms-Collection-Python
+# Algorithms Collection Python
 Whenever I face an interesting problem I document the algorithm that I learned to solve it. Hopefully my list will increase as time goes on.
 
 # Dynamic Programming
