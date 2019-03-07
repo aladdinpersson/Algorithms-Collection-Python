@@ -1,14 +1,14 @@
 # Quicksort with pivot always using first index as pivot
 
 def quicksort_firstpivot(x):
-    global count_comparisons
+    # global count_comparisons
 
     if len(x) <= 1:
         return x
 
     pivot = x[0]
 
-    count_comparisons += len(x) - 1
+    # count_comparisons += len(x) - 1
 
     i = 0
 
@@ -114,7 +114,7 @@ if __name__ == '__main__':
 
     numbers = [int(x.strip()) for x in numbers]
 
-    count_comparisons = 0
+    # count_comparisons = 0
     # final =  quicksort_firstpivot(numbers)
     # final =  quicksort_lastpivot(numbers)
     final =  quicksort_median(numbers)
