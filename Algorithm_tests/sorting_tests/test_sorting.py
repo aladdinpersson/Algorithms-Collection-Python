@@ -13,6 +13,7 @@ from bubblesort import bubblesort
 from insertionsort import insertionsort
 from mergesort import merge_sort, merge
 from quicksort import quicksort_firstpivot
+from randomized_quicksort import quicksort_randomized
 from selectionsort import selectionsort
 
 # Test cases we wish to run
@@ -84,6 +85,15 @@ class test_sorting(unittest.TestCase):
         self.assertEqual(selectionsort(L5), L5_sorted)
         self.assertEqual(selectionsort(L6), L6_sorted)
         self.assertEqual(selectionsort(L7), L7_sorted)
+
+    def test_quicksort_randomized(self):
+        self.assertEqual(quicksort_randomized(L1), L1_sorted)
+        self.assertEqual(quicksort_randomized(L2), L2_sorted)
+        self.assertEqual(quicksort_randomized(L3), L3_sorted)
+        self.assertEqual(quicksort_randomized(L4), L4_sorted)
+        self.assertEqual(quicksort_randomized(L5), L5_sorted)
+        self.assertEqual(quicksort_randomized(L6), L6_sorted)
+        self.assertEqual(quicksort_randomized(L7), L7_sorted)
 
 
 if __name__ == '__main__':
