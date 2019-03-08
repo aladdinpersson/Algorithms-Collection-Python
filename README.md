@@ -37,6 +37,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Insertion sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/insertionsort.py)
 * [Selection sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/selectionsort.py)
 * [Merge sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/mergesort.py)
+* [Randomized Quick sort]() **- Average O(nlogn)**
 * [Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/quicksort.py)
 
 # Contributing
