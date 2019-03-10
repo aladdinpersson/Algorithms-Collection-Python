@@ -22,9 +22,9 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Depth First Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/depth-first-search/DFS_recursive.py) **- Recursive Implementation**
 
 # Mathematics
-* [Karatsuba Multiplication](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/karatsuba/karatsuba.py)
-* [Euclidean Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/euclid_gcd/euclid_gcd.py)
-* [Sieve of Eratosthenes](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/sieve_of_eratosthenes/sieve_eratosthenes.py)
+* [Karatsuba Multiplication](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/karatsuba/karatsuba.py) **- ~ O(n<sup>1.585</sup>)** 
+* [Euclidean Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/euclid_gcd/euclid_gcd.py)  **- O(n)** 
+* [Sieve of Eratosthenes](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/sieve_of_eratosthenes/sieve_eratosthenes.py) **- O(nlog(log(n)))**
 
 # Other
 * [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py)
@@ -36,9 +36,9 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Hope sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/hopesort.py) **- O(1), hopefully**
 * [Insertion sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/insertionsort.py) **- O(n<sup>2</sup>)** 
 * [Selection sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/selectionsort.py) **- O(n<sup>2</sup>)** 
-* [Merge sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/mergesort.py) **- O(nlogn)** 
+* [Merge sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/mergesort.py) **- O(nlog(n))** 
 * [Randomized Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/randomized_quicksort.py) **- Average O(nlogn) (Input independent!)**
-* [Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/quicksort.py) **- Average O(nlogn)**
+* [Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/quicksort.py) **- Average O(nlog(n))**
 
 # Contributing
 I appreciate feedback on potential improvements and/or if you see an error that I've made!
