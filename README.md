@@ -32,13 +32,13 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 
 
 # Sorting algorithms
-* [Bubble sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/bubblesort.py)
+* [Bubble sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/bubblesort.py) **- O(n<sup>2</sup>)** 
 * [Hope sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/hopesort.py) **- O(1), hopefully**
-* [Insertion sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/insertionsort.py)
-* [Selection sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/selectionsort.py)
-* [Merge sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/mergesort.py)
-* [Randomized Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/randomized_quicksort.py) **- Average O(nlogn)**
-* [Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/quicksort.py)
+* [Insertion sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/insertionsort.py) **- O(n<sup>2</sup>)** 
+* [Selection sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/selectionsort.py) **- O(n<sup>2</sup>)** 
+* [Merge sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/mergesort.py) **- O(nlogn)** 
+* [Randomized Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/randomized_quicksort.py) **- AVG Input indendent O(nlogn)**
+* [Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/quicksort.py) **- Average O(nlogn)**
 
 # Contributing
 I appreciate feedback on potential improvements and/or if you see an error that I've made!
