@@ -20,8 +20,8 @@ class test_binarysearch(unittest.TestCase):
         self.L1_target = 5
         self.L1_correct = True, 2
 
-        self.L2 =[1, 3, 7, 8, 10, 12]
-        self.L2_target = 5
+        self.L2 = [1, 3, 5, 8, 10, 12]
+        self.L2_target = 6
         self.L2_correct = False, None
 
         self.L3 = [1,1,1,1,1,1,1,1]
@@ -32,7 +32,7 @@ class test_binarysearch(unittest.TestCase):
         self.L4_target = 27
         self.L4_correct = True, len(self.L4)-1
 
-        self.L5 = [1, 3, 6, 11, 16, 21, 25, 27]
+        self.L5 = [1, 3, 6, 11, 16, 21, 27]
         self.L5_target = 1
         self.L5_correct = True, 0
 
@@ -40,8 +40,12 @@ class test_binarysearch(unittest.TestCase):
         self.L6_target = 10
         self.L6_correct = False, None
 
+        self.L7 = [11,12,15,19,23,41,173,298]
+        self.L7_target = 12
+        self.L7_correct = True, 1
 
-    def test_binarysearch_simple(self):
+
+    def test_binarysearch_basic(self):
         L1_result_iterative = binarysearch_iterative(self.L1, self.L1_target)
         L1_result_recursive = binarysearch_recursive(self.L1, self.L1_target, 0, len(self.L1)-1)
 
@@ -82,6 +86,13 @@ class test_binarysearch(unittest.TestCase):
 
         self.assertEqual(L6_result_iterative, self.L6_correct)
         self.assertEqual(L6_result_recursive, self.L6_correct)
+
+    def test_binarysearch_standard(self):
+        L7_result_iterative = binarysearch_iterative(self.L7, self.L7_target)
+        L7_result_recursive = binarysearch_recursive(self.L7, self.L7_target, 0, len(self.L7) - 1)
+
+        self.assertEqual(L7_result_iterative, self.L7_correct)
+        self.assertEqual(L7_result_recursive, self.L7_correct)
 
 
 if __name__ == '__main__':
