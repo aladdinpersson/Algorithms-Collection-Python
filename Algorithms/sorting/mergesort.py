@@ -28,12 +28,9 @@ def merge(left, right):
 
     return result
 
-def main():
+if __name__ == "__main__":
     array = [5, 4, 3, 2, 1]
     print(array)
 
     result = merge_sort(array)
     print(result)
-
-if __name__ == "__main__":
-    main()
