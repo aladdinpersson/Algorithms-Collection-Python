@@ -15,11 +15,11 @@ def merge(left, right):
     left_pointer = right_pointer = 0
 
     while left_pointer < len(left) and right_pointer < len(right):
-        if left[left_pointer] < right[right_pointer]:
+        if left[left_pointer] <= right[right_pointer]:
             result.append(left[left_pointer])
             left_pointer += 1
 
-        else:
+        elif right[right_pointer] < left[left_pointer] :
             result.append(right[right_pointer])
             right_pointer += 1
 

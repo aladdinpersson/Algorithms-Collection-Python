@@ -1,26 +1,27 @@
 # Quicksort with pivot always using first index as pivot
 
-def quicksort_firstpivot(x):
+def quicksort_firstpivot(L):
     # global count_comparisons
 
-    if len(x) <= 1:
-        return x
+    if len(L) <= 1:
+        return L
 
-    pivot = x[0]
+    pivot = L[0]
 
     # count_comparisons += len(x) - 1
 
     i = 0
 
-    for j in range(1, len(x)):
-        if x[j] < pivot:
-            x[j], x[i+1] = x[i+1], x[j]
+    for j in range(1, len(L)):
+        if L[j] < pivot:
+            L[j], L[i+1] = L[i+1], L[j]
             i += 1
 
-    x[0], x[i] = x[i], x[0]
-    left = quicksort_firstpivot(x[:i])
-    right = quicksort_firstpivot(x[i+1:])
-    left.append(x[i])
+    L[0], L[i] = L[i], L[0]
+
+    left = quicksort_firstpivot(L[:i])
+    right = quicksort_firstpivot(L[i+1:])
+    left.append(L[i])
     result = left + right
     return result
 
@@ -106,18 +107,3 @@ def quicksort_median(x):
     left.append(x[i])
     result = left + right
     return result
-
-
-if __name__ == '__main__':
-    with open('integers.txt') as f:
-        numbers = f.readlines()
-
-    numbers = [int(x.strip()) for x in numbers]
-
-    # count_comparisons = 0
-    # final =  quicksort_firstpivot(numbers)
-    # final =  quicksort_lastpivot(numbers)
-    final =  quicksort_median(numbers)
-
-    print(final == sorted(numbers))
-    print(count_comparisons)

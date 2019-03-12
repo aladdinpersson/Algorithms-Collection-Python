@@ -87,7 +87,7 @@ def decode(binarystring, root):
     return decoded_msg
 
 def main():
-    freq, text = make_frequency_dict(file="huffman.txt")
+    freq, text = make_frequency_dict(file="Huffman.txt")
     #print(f"Our message that we wish to decompress using Huffman is: \n{text}")
 
     heap = make_heap(freq)
