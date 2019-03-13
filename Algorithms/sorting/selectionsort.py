@@ -6,7 +6,7 @@ Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
 
 '''
 
-# Insertion sort that creates a copy. More "intuitive" but requires extra memory.
+# Selection sort that creates a copy. More "intuitive" but requires extra memory.
 def selectionsort_intuitive(L):
     correctly_sorted = []
 
@@ -38,6 +38,6 @@ def selectionsort(L):
     return L
 
 if __name__ == '__main__':
-    unsorted = [2,7,4,1,5,3]
-    sorted = selectionsort(unsorted)
+    unsorted = [10000,2,7,4,1,5,3,15,13,169]
+    sorted = selectionsort_intuitive(unsorted)
     print(sorted)

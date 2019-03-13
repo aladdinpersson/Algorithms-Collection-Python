@@ -15,7 +15,6 @@ def insertionsort(L):
 
         # inserts the key into the correct place
         while position >= 0 and L[position] > value:
-            print(L)
             L[position+1] = L[position]
             position -= 1
 
@@ -25,6 +24,6 @@ def insertionsort(L):
 
 
 if __name__ == '__main__':
-    unsorted = [2,8,5,3,9,4]
+    unsorted = [7,2,4,1,5,3]
     sorted = insertionsort(unsorted)
     print(sorted)
