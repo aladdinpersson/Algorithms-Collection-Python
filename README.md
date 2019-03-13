@@ -28,7 +28,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Euclidean Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/euclid_gcd/euclid_gcd.py)  **- O(n)** 
 * [Sieve of Eratosthenes](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/sieve_of_eratosthenes/sieve_eratosthenes.py) **- O(nlog(log(n)))**
 
-## Numerical Methods
+### Numerical Methods
 * Coming Soon
 
 # Search
