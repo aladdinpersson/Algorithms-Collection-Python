@@ -23,6 +23,8 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 
 # Mathematics
 * [Karatsuba Multiplication](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/karatsuba/karatsuba.py) **- O(n<sup>1.585</sup>)** 
+* [Intersection of two sets](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/intersection_of_two_sets/intersection_of_two_sets.py) **- O(nlog(n)) + O(mlog(m))** 
+* [Union of two sets](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/union_of_two_sets/union_of_two_sets.py) **- O(nlog(n)) + O(mlog(m))** 
 * [Euclidean Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/euclid_gcd/euclid_gcd.py)  **- O(n)** 
 * [Sieve of Eratosthenes](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/sieve_of_eratosthenes/sieve_eratosthenes.py) **- O(nlog(log(n)))**
 
