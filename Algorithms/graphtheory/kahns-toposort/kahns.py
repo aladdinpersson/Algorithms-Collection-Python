@@ -1,3 +1,11 @@
+'''
+Purpose of this algorithm is finding a path that is in topological ordering for a directed acyclic graph (DAG).
+
+Programmed by Aladdin Persson <aladdin.persson at hotmail.com>
+*   2019-03-17 Intitial programming
+
+'''
+
 from collections import defaultdict, deque
 import re
 
