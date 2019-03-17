@@ -14,7 +14,7 @@ def make_graph(file):
 
     line_list = f.readlines()
 
-    # Found on mukeshmithrakumar github, thought this was really clean..
+    # Kinda messy.
     # populate the graph using data from the text file via dictionary comprehensions
     G = {int(line.split()[0]): {(int(tup.split(',')[0])): int(tup.split(',')[1])
                                 for tup in line.split()[1:] if tup} for line in line_list if line}
@@ -29,8 +29,8 @@ def dijkstra(G, start, end=None):
         visited[node] = False
 
     distance[start], visited[start] = 0, True
-
     heapq.heappush(heap, (0, start))
+
     while heap:
         (d, node) = heapq.heappop(heap)
         visited[node] = True
@@ -40,7 +40,6 @@ def dijkstra(G, start, end=None):
                 history[child_node] = node
                 distance[child_node] = d + weight
                 heapq.heappush(heap, (distance[child_node], child_node))
-
 
     if end != None:
         current_node = end

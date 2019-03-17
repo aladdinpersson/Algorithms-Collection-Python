@@ -27,8 +27,6 @@ def bellman_ford(G, start):
     if len(G) == 0:
         raise ValueError("There should be something in the graph")
 
-
-
     # step1: initialize by setting to infinity etc.
     shortest_distance = {}
     predecessor = {}

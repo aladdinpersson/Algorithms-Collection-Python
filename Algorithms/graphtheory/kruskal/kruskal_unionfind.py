@@ -1,10 +1,7 @@
-# Kruskal's algorithm for finding minimal spanning tree (MST) of a graph.
-# Using Union find datastructure
+# Kruskal's algorithm for finding minimal spanning tree (MST) of a graph. Using Union find datastructure
 
 # Aladdin Persson <aladdin.persson at hotmail dot com>
 #   2019-02-18 Initial programming
-
-# Comments: Might need some comments but I feel otherwise it is good implementation
 
 from unionfind import unionfind
 

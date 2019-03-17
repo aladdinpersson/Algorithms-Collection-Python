@@ -31,11 +31,9 @@ def DFS(G, start_node):
     while stack:
         v = stack.pop()
         if not visited[v-1]:
-
             visited[v-1]=True
 
             for connected_node in G[v]:
-
                 if not visited[connected_node-1]:
                     stack.append(connected_node)
                     path.append(connected_node)

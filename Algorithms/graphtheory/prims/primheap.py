@@ -19,12 +19,9 @@ def load_graph(file='edges.txt'):
 
     num_nodes, num_edges = line_list[0].split()
 
-
-
     G = {line: [tuple(map(int, tup.split()))[::-1] for tup in line_list[1:]
                                 if (int(tup.split()[0]) == line or int(tup.split()[1]) == line)]
                                 for line in range(1, int(num_nodes) + 1)}
-
 
     f.close()
     return G, int(num_nodes)
