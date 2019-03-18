@@ -29,7 +29,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Union of two sets](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/union_of_two_sets/union_of_two_sets.py) **- O(nlog(n)) + O(mlog(m))** 
 * [Euclidean Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/euclid_gcd/euclid_gcd.py)  **- O(n)** 
 * [Sieve of Eratosthenes](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/sieve_of_eratosthenes/sieve_eratosthenes.py) **- O(nlog(log(n)))**
-* [Prime factorization](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/sieve_of_eratosthenes/sieve_eratosthenes.py) **- O(sqrt(n))**
+* [Prime factorization](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/prime_factorization/primefactorization.py) **- O(sqrt(n))**
 
 ### Numerical Methods
 * Coming Soon
