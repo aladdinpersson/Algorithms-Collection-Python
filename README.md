@@ -8,7 +8,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_memoization_recursive.py) **- Recursive with memoization implementation**
 
 # Graph theory
-* [Kahns Topological Sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kahns-toposort/kahns.py) **- O(|V|+|E)**
+* [Kahns Topological Sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kahns-toposort/kahns.py) **- O(|V|+|E|)**
 * [Bellman-Ford Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/bellman-ford/bellman_ford.py) **- Unoptimized implementation**
 * [Floyd-Warshall Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/floyd-warshall/floyd-warshall.py) **- O(n<sup>3</sup>)**
 * [Dijkstra Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/dijkstra/djikstra.py) **- Naive implementation**

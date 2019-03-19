@@ -12,7 +12,7 @@ def primefactorization(n):
     original_value = n
     values = []
 
-    for i in range(2, int(n**0.5)):
+    for i in range(2, int(n**0.5) + 1):
         # Will not pass this if statement if i is not a prime number.
         # (This is because all numbers have a prime factorization)
         if n % i == 0:
@@ -30,3 +30,4 @@ def primefactorization(n):
 
 if __name__ == '__main__':
     primefactorization(17)
+    primefactorization(1210000)
