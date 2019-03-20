@@ -18,3 +18,6 @@ def gcd_iterative(a,b):
         a, b = b, a%b
 
     return a
+
+if __name__ == '__main__':
+    print(gcd_iterative(65,14))

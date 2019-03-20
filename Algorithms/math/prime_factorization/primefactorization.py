@@ -29,5 +29,5 @@ def primefactorization(n):
         print(f'There is no prime factorization because the number {original_value} is a prime')
 
 if __name__ == '__main__':
-    primefactorization(17)
-    primefactorization(1210000)
+    # primefactorization(78421749823748273)
+    primefactorization(13)
