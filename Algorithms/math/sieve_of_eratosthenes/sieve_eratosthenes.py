@@ -19,6 +19,6 @@ def eratosthenes(n):
     return primes
 
 if __name__ == '__main__':
-    n = 10**2
+    n = 10**6
     primes = eratosthenes(n)
     print(primes)

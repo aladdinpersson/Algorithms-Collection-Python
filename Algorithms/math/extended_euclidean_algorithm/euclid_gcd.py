@@ -15,6 +15,6 @@ def extended_euclidean(a, b):
         return (gcd, y - (b//a) * x, x)
 
 if __name__ == '__main__':
-    print(extended_euclidean(2, 5))
-    print(extended_euclidean(56, 15))
+    print(extended_euclidean(8,-11))
+    #print(extended_euclidean(13, 2640))
 
