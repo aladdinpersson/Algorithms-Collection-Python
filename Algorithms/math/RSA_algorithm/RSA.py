@@ -90,7 +90,7 @@ def decrypt(encrypted, n,d):
     return decrypted_message
 
 
-def test():
+def example():
     # An example of a test case where we generate all necessary primes, encrypt and then decrypt the message.
     # Only to show how all parts of the code is working. This is not how it's going to be used in practice.
     hidden_message = "hello i love peanuts"
