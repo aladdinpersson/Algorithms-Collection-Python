@@ -6,8 +6,8 @@
 
 '''
 def function(x):
-    return (x**2 - 2)
-
+    #return (x**2 - 2)
+    return (x**2 + 2*x - 1)
 
 def bisection(a0, b0, eps, delta, maxit):
     # Initialize search bracket s.t a <= b
@@ -20,6 +20,7 @@ def bisection(a0, b0, eps, delta, maxit):
 
     if function(alpha)*function(beta) > 0:
         print("Needs to have one f(a) > 0 and f(b) < 0")
+        exit()
 
     for j in range(maxit):
         a.append(alpha)
@@ -50,11 +51,11 @@ def bisection(a0, b0, eps, delta, maxit):
     return alpha,beta
 
 def main():
-    a = 1
-    b = 2
+    a = 0
+    b = 1
     #print(function(a))
     #print(function(b))
-    alpha, beta = bisection(a,b,eps=1e-8,delta=1e-8, maxit=1000)
+    alpha, beta = bisection(a,b,eps=1e-8,delta=1e-8, maxit=3)
     print("Bracket is (" + str(alpha)+ ', ' + str(beta) + ')')
 
 main()
