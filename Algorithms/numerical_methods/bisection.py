@@ -1,4 +1,8 @@
 '''
+# Purpose of the bisection method is to find an interval where there exists a root
+
+# Programmed by Aladdin Persson
+#   2019-10-07 Initial programming
 
 '''
 def function(x):
