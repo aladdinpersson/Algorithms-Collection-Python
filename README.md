@@ -36,6 +36,10 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Sieve of Eratosthenes](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/sieve_of_eratosthenes/sieve_eratosthenes.py) **- O(nlog(log(n)))**
 * [Prime factorization](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/prime_factorization/primefactorization.py) **- O(sqrt(n))**
 
+### Cryptology
+* [Ceasar Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/RSA_algorithm/RSA.py)
+* [RSA-Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/RSA_algorithm/RSA.py)
+
 ### Numerical Methods
 * [Bisection Method](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/bisection.py)
 * [(simple) Fixpoint iteration](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/fixpoint.py)

@@ -1,7 +1,7 @@
 language: python
 
 # Default Python version is usually 2.7
-python: 3.6
+python: 3.7
 
 # Install ruby to get gem command
 before_install:
@@ -23,3 +23,4 @@ script:
      - python Algorithm_tests/search_tests/test_binarysearch.py
      - python Algorithm_tests/math_tests/intersection_test.py
      - python Algorithm_tests/math_tests/union_test.py
+     - python Algorithm_tests/cryptology_tests/ceasar_test.py
