@@ -50,11 +50,4 @@ def main():
     #print('Encrypted message: ' + cipher)
     #print('Decrypted message: ' + decrypted)
 
-
 main()
-
-
-
-
-
-
