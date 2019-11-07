@@ -29,7 +29,6 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Union of two sets](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/union_of_two_sets/union_of_two_sets.py) **- O(nlog(n)) + O(mlog(m))** 
 
 ### Number Theory
-* [RSA-Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/RSA_algorithm/RSA.py)
 * [Pollard p-1 factorization](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/pollard_p1/pollard_p1.py)  
 * [Euclidean Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/euclid_gcd/euclid_gcd.py)  **- O(log(n))**
 * [Extended Euclidean Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/extended_euclidean_algorithm/euclid_gcd.py)  **- O(log(n))**
@@ -37,8 +36,8 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Prime factorization](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/prime_factorization/primefactorization.py) **- O(sqrt(n))**
 
 ### Cryptology
-* [Ceasar Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/RSA_algorithm/RSA.py)
-* [RSA-Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/RSA_algorithm/RSA.py)
+* [Ceasar Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/ceasar_shifting_cipher/ceasar_shift_cipher.py)
+* [RSA-Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/RSA_algorithm/RSA.py)
 
 ### Numerical Methods
 * [Bisection Method](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/bisection.py)
