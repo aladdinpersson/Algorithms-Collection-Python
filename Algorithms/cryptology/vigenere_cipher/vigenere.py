@@ -12,10 +12,9 @@ Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
 '''
 
 
-alphabet = 'abcdefghijklmnopqrstuvwxyz '
-letter_to_index = dict(zip(alphabet, range(len(alphabet))))
-index_to_letter = dict(zip(range(len(alphabet)), alphabet))
-
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+letter_to_index = dict(zip(alphabet, range(1, 1 + len(alphabet))))
+index_to_letter = dict(zip(range(1, 1 + len(alphabet)), alphabet))
 
 def encrypt(message, key):
     encrypted = ''
@@ -44,13 +43,13 @@ def decrypt(cipher, key):
     return decrypted
 
 def main():
-    message = 'we attack tomorrow at noon'
-    key = 'secret'
+    message = 'iloovepeanuts'
+    key = 'banana'
     encrypted_message = encrypt(message, key)
     decrypted_message = decrypt(encrypted_message, key)
 
-    # print('Original message: ' + message)
-    # print('Encrypted message: ' + encrypted_message)
-    # print('Decrypted message: ' + decrypted_message)
+    print('Original message: ' + message)
+    print('Encrypted message: ' + encrypted_message)
+    print('Decrypted message: ' + decrypted_message)
 
 main()
