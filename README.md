@@ -35,7 +35,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Sieve of Eratosthenes](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/sieve_of_eratosthenes/sieve_eratosthenes.py) **- O(nlog(log(n)))**
 * [Prime factorization](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/math/prime_factorization/primefactorization.py) **- O(sqrt(n))**
 
-### Cryptology
+### Cryptography
 * [Ceasar Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/ceasar_shifting_cipher/ceasar_shift_cipher.py)
 * [Hill Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/crypto/Algorithms/cryptology/hill_cipher/hill_cipher.py)
 * [Vigenere Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/crypto/Algorithms/cryptology/vigenere_cipher/vigenere.py)
