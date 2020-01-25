@@ -16,7 +16,7 @@ Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
 import numpy as np
 from egcd import egcd # pip install egcd
 
-alphabet = 'abcdefghijklmnopqrstuvwxyz '
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 letter_to_index = dict(zip(alphabet, range(len(alphabet))))
 index_to_letter = dict(zip(range(len(alphabet)), alphabet))
@@ -24,8 +24,8 @@ index_to_letter = dict(zip(range(len(alphabet)), alphabet))
 def matrix_mod_inv(matrix, modulus):
     '''We find the matrix modulus inverse by
     Step 1) Find determinant
-    Step 2) Find the inverse of the determinant value in modulus in a specific modulus (usually length of alphabet)
-    Step 3) Take that det_inv times the inverted matrix in modulus 26 (applied elementwise).
+    Step 2) Find determinant value in a specific modulus (usually length of alphabet)
+    Step 3) Take that det_inv times the det*inverted matrix (this will then be the adjoint) in mod 26
     '''
 
     det = int(np.round(np.linalg.det(matrix))) # Step 1)
@@ -44,17 +44,17 @@ def encrypt(message, K):
     split_P = [message_in_numbers[i:i + int(K.shape[0])] for i in range(0, len(message_in_numbers), int(K.shape[0]))]
 
     for P in split_P:
-        P = np.transpose(np.asarray(P))
+        P = np.transpose(np.asarray(P))[:,np.newaxis]
 
         while P.shape[0] != K.shape[0]:
-            P = np.append(P, letter_to_index[' '])
+            P = np.append(P, letter_to_index[' '])[:,np.newaxis]
 
         numbers = np.dot(K, P) % len(alphabet)
-        n = numbers.shape[1] # length of encrypted message (in numbers)
+        n = numbers.shape[0] # length of encrypted message (in numbers)
 
         # Map back to get encrypted text
         for idx in range(n):
-            number = int(numbers[0, idx])
+            number = int(numbers[idx, 0])
             encrypted += index_to_letter[number]
 
     return encrypted
@@ -69,20 +69,23 @@ def decrypt(cipher, Kinv):
     split_C = [cipher_in_numbers[i:i + int(Kinv.shape[0])] for i in range(0, len(cipher_in_numbers), int(Kinv.shape[0]))]
 
     for C in split_C:
-        C = np.transpose(np.asarray(C))
+        C = np.transpose(np.asarray(C))[:,np.newaxis]
         numbers = np.dot(Kinv, C) % len(alphabet)
-        n = numbers.shape[1]
+        n = numbers.shape[0]
 
         for idx in range(n):
-            number = int(numbers[0, idx])
+            number = int(numbers[idx, 0])
             decrypted += index_to_letter[number]
 
     return decrypted
 
 def main():
-    message = 'my life is potato'
+    #message = 'my life is potato'
+    message = 'help'
+
+    K = np.matrix([[3,3],[2,5]])
     # K = np.matrix([[6, 24, 1], [13,16,10], [20,17,15]]) # for length of alphabet = 26
-    K = np.matrix([[3,10,20],[20,19,17], [23,78,17]]) # for length of alphabet = 27
+    #K = np.matrix([[3,10,20],[20,19,17], [23,78,17]]) # for length of alphabet = 27
     Kinv = matrix_mod_inv(K, len(alphabet))
 
     encrypted_message = encrypt(message, K)

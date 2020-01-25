@@ -37,7 +37,11 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 
 ### Cryptology
 * [Ceasar Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/ceasar_shifting_cipher/ceasar_shift_cipher.py)
+* [Hill Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/crypto/Algorithms/cryptology/hill_cipher/hill_cipher.py)
+* [Vigenere Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/crypto/Algorithms/cryptology/vigenere_cipher/vigenere.py)
+* [One time pad](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/crypto/Algorithms/cryptology/one_time_pad/one_time_pad.py)
 * [RSA-Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/RSA_algorithm/RSA.py)
+
 
 ### Numerical Methods
 * [Bisection Method](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/bisection.py)
