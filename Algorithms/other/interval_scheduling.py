@@ -1,31 +1,49 @@
-a = (0,3)
-b = (1,3)
-c = (0,5)
-d = (3,6)
-e = (4,7)
-f = (3,9)
-g = (5,10)
-h = (8,10)
-R = [d,e,a,b,c,g,h,f]
-R.sort(key=lambda x: x[1])
-#print(R) # now R is sorted with first finish time at the beginning.
-A = []
-print(R)
+# Interval Scheduling, we have a set of requests R and we wish to choose
+# the maximum amount of non-overlapping intervals and output the optimal
+# solution as O.
 
+# Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
+#   2020-01-25 Initial programming
 
-while R: # keep going while R still has elements
-    (si, fi) = R[0]
-    A.append((si,fi))
-    R_tilde = R.copy()
-    
-    for each in R:
-        (sj, fj) = each
+def interval_scheduling(R):
+    finish = 0
 
-        if sj < fi:
-            R_tilde.remove(each)
+    for r in R:
+        # remember r[0] start time of request r, r[1] finish time of request r
+        if finish <= r[0]:
+            finish = r[1]
+            O.append(r)
+y
+    print(O)
 
-    R = R_tilde.copy()
+def interval_scheduling_complicated_version(R):
+    while R: # keep going while R still has elements
+        (si, fi) = R[0]
+        O.append((si,fi))
+        idx = 0
 
+        while idx < len(R):
+            (sj, fj) = R[idx]
 
-print(A)
-    
+            if fi > sj:
+                R.remove(R[idx])
+                idx -= 1
+
+            idx += 1
+
+if __name__ == '__main__':
+    # request is: (start, end)
+    r1 = (0, 3)
+    r2 = (1, 3)
+    r3 = (0, 5)
+    r4 = (3, 6)
+    r5 = (4, 7)
+    r6 = (3, 9)
+    r7 = (5, 10)
+    r8 = (8, 10)
+    R = [r1,r2,r3,r4,r5,r6,r7,r8]
+    R.sort(key=lambda x: x[1]) # sort by finish times f1 <= f2 <= ... <= fn
+    O = []
+
+    interval_scheduling(R)
+    print('The intervals to choose are: ' + str(O))
