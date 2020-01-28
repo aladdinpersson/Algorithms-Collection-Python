@@ -5,7 +5,7 @@
 # Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
 #   2020-01-25 Initial programming
 
-def interval_scheduling(R):
+def interval_scheduling(R, O):
     finish = 0
 
     for r in R:
@@ -13,10 +13,10 @@ def interval_scheduling(R):
         if finish <= r[0]:
             finish = r[1]
             O.append(r)
-y
-    print(O)
 
-def interval_scheduling_complicated_version(R):
+    return O
+
+def interval_scheduling_complicated_version(R, O):
     while R: # keep going while R still has elements
         (si, fi) = R[0]
         O.append((si,fi))
@@ -30,6 +30,7 @@ def interval_scheduling_complicated_version(R):
                 idx -= 1
 
             idx += 1
+    return O
 
 if __name__ == '__main__':
     # request is: (start, end)
@@ -45,5 +46,5 @@ if __name__ == '__main__':
     R.sort(key=lambda x: x[1]) # sort by finish times f1 <= f2 <= ... <= fn
     O = []
 
-    interval_scheduling(R)
+    O = interval_scheduling(R, O)
     print('The intervals to choose are: ' + str(O))
