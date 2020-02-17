@@ -7,7 +7,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_bottomup.py)  **O(nC) Bottom-Up implementation (Loops)**
 * [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_memoization_recursive_topdown.py) **O(nC) - Recursive with memoization implementation**
 * [:movie_camera:](https://youtu.be/XmyxiSc3LKg)[Sequence Alignment](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/sequence_alignment.py) **O(nm)**
-* [:movie_camera:](https://youtu.be/dU-coYsd7zw )[Weighted Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/weighted_interval_scheduling.py) **O(nlog(n))**
+* [:movie_camera:](https://youtu.be/dU-coYsd7zw)[Weighted Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/weighted_interval_scheduling.py) **O(nlog(n))**
 
 # Graph theory
 * [Kahns Topological Sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kahns-toposort/kahns.py) **- O(|V|+|E|)**
@@ -39,9 +39,9 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 
 ### Cryptography
 * [Ceasar Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/ceasar_shifting_cipher/ceasar_shift_cipher.py)
-* [Hill Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/crypto/Algorithms/cryptology/hill_cipher/hill_cipher.py)
-* [Vigenere Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/crypto/Algorithms/cryptology/vigenere_cipher/vigenere.py)
-* [One time pad](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/crypto/Algorithms/cryptology/one_time_pad/one_time_pad.py)
+* [Hill Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/hill_cipher/hill_cipher.py)
+* [Vigenere Cipher](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/vigenere_cipher/vigenere.py)
+* [One time pad](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/one_time_pad/one_time_pad.py)
 * [RSA-Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/cryptology/RSA_algorithm/RSA.py)
 
 
@@ -55,7 +55,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 # Other
 * [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py)
 * [Huffman Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/Huffman/Huffman.py)
-* [Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/interval_scheduling.py) **- O(nlog(n))
+* [:movie_camera:](https://youtu.be/SmPxC8m0yIY)[Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/interval_scheduling.py) **- O(nlog(n))
 
 # Sorting algorithms
 * [Bubble sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/bubblesort.py) **- O(n<sup>2</sup>)** 
