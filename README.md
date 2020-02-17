@@ -4,8 +4,10 @@
 Whenever I face an interesting problem I document the algorithm that I learned to solve it. Hopefully my list will increase as time goes on.
 
 # Dynamic Programming
-* [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_naive_recursive.py) **- Naive recursive implementation**
-* [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_memoization_recursive.py) **- Recursive with memoization implementation**
+* [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_bottomup.py)  **O(nC) Bottom-Up implementation (Loops)**
+* [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_memoization_recursive.py) **O(nC) - Recursive with memoization implementation**
+* [:movie_camera:](test)[Queue][Sequence Alignment](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/sequence_alignment.py) **O(nm)**
+* [:movie_camera:](test)[Queue][Weighted Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/weighted_interval_scheduling.py) **O(nlog(n))**
 
 # Graph theory
 * [Kahns Topological Sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kahns-toposort/kahns.py) **- O(|V|+|E|)**
@@ -53,7 +55,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 # Other
 * [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py)
 * [Huffman Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/Huffman/Huffman.py)
-
+* [Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/interval_scheduling.py) **- O(nlog(n))
 
 # Sorting algorithms
 * [Bubble sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/bubblesort.py) **- O(n<sup>2</sup>)** 
