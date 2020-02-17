@@ -5,7 +5,11 @@
 # Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
 #   2020-01-25 Initial programming
 
+# Video: https://youtu.be/SmPxC8m0yIY
+
 def interval_scheduling(R, O):
+    R.sort(key=lambda x: x[1])  # sort by finish times f1 <= f2 <= ... <= fn
+
     finish = 0
 
     for r in R:
@@ -33,6 +37,7 @@ def interval_scheduling_complicated_version(R, O):
     return O
 
 if __name__ == '__main__':
+    # run small example
     # request is: (start, end)
     r1 = (0, 3)
     r2 = (1, 3)
@@ -42,9 +47,9 @@ if __name__ == '__main__':
     r6 = (3, 9)
     r7 = (5, 10)
     r8 = (8, 10)
-    R = [r1,r2,r3,r4,r5,r6,r7,r8]
-    R.sort(key=lambda x: x[1]) # sort by finish times f1 <= f2 <= ... <= fn
-    O = []
 
+    R = [r1,r2,r3,r4,r5,r6,r7,r8]
+    O = []
     O = interval_scheduling(R, O)
+
     print('The intervals to choose are: ' + str(O))
