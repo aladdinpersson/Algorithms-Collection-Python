@@ -1,6 +1,6 @@
 # Purpose is to implement karatsuba multiplication, a way of computing
 # x * y which is faster than the normal method taught at school which has a time complexity of O(n^2) which
-# is very slow. This method produces a way which is much faster approx. O(n^(1.59))
+# is very slow. This method produces a way which is much faster approx. O(n^(log2(3)))
 
 # import random to check if implementation is correct
 import random
@@ -16,28 +16,28 @@ def karatsuba(x,y):
     if len(str(x)) == 1 or len(str(y)) == 1:
         return (x*y)
 
-    n = max(len(str(x)), len(str(y))) // 2
+    n = max(len(str(x)), len(str(y)))
 
     # split about middle (can be done in multiple ways, found on github, thought was rly clever)
-    a = x // 10**n
-    b = x % 10**n
-    c = y // 10**n
-    d = y % 10**n
+    a = x // 10**(n // 2)
+    b = x % 10**(n // 2)
+    c = y // 10**(n // 2)
+    d = y % 10**(n // 2)
 
     # Compute the terms using recursion
     ac = karatsuba(a,c)
     bd = karatsuba(b,d)
-    ad_bc = karatsuba(a+b,c+d) - ac - bd
+    ad_bc = karatsuba(a + b,c + d) - ac - bd
 
     # calculate x * y
-    product = ac * (10**(2*n)) + ad_bc * (10**n) + bd
+    product = ac * (10**(2*(n//2))) + ad_bc * (10**(n // 2)) + bd
 
     # return x * y
     return product
 
 # Following checks if implementation is correct
 # if __name__ == '__main__':
-#     for _ in range(100000):
+#     for _ in range(500):
 #         a = random.randint(-100000, 100000)
 #         b = random.randint(-100000, 100000)
 #         karatsuba_result = karatsuba(a, b)

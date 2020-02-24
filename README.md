@@ -49,13 +49,14 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Bisection Method](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/bisection.py)
 * [(simple) Fixpoint iteration](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/fixpoint.py)
 
-# Search
-* [Binary Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/search/binarysearch.py) **- O(log(n))** 
-
+# Machine Learning
+* [Neural Network from scratch]((https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/bisection.py))
+ 
 # Other
 * [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py)
 * [Huffman Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/Huffman/Huffman.py)
 * [:movie_camera:](https://youtu.be/SmPxC8m0yIY)[Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/interval_scheduling.py) **- O(nlog(n))**
+* [Binary Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/search/binarysearch.py) **- O(log(n))** 
 
 # Sorting algorithms
 * [Bubble sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/bubblesort.py) **- O(n<sup>2</sup>)** 
