@@ -40,7 +40,7 @@ def find_solution(OPT, m, n):
 def alignment(x, y, solution):
     n = len(y)
     m = len(x)
-    OPT = [ [j for i in range(n+1)] for j in range(m+1)]
+    OPT = [ [0 for i in range(n+1)] for j in range(m+1)]
     
     for i in range(1,m+1):
         OPT[i][0] = i
@@ -58,8 +58,8 @@ def alignment(x, y, solution):
 
 if __name__ == '__main__':
     solution = []
-    x = 'TGACGTGC'*1
-    y = 'TCGACGTCA'*1
+    x = 'TGACGTGC'
+    y = 'TCGACGTCA'
     print('We we want to transform: ' + x + ' to: ' + y)
     min_edit, steps = alignment(x, y, solution)
     print('Minimum amount of edit steps are: ' + str(min_edit))
