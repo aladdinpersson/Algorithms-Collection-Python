@@ -1,3 +1,16 @@
+import sys
+import unittest
+
+
+# For importing from different folders
+# OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
+# sys.path.append('Algorithms/cryptology/ceasar_shifting_cipher')
+
+# If run from local:
+#sys.path.append('../../Algorithms/dynamic_programming/knapsack/knapsack_bottomup')
+
+
+
 # with open('p01_c.txt') as f_capacity:
 #     capacity = int(f_capacity.readline())
 #

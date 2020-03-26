@@ -49,9 +49,6 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * [Bisection Method](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/bisection.py)
 * [(simple) Fixpoint iteration](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/fixpoint.py)
 
-# Machine Learning
-* [Neural Network from scratch](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/machine_learning/neural_network/Neural%20Network%20from%20scratch.ipynb)
- 
 # Other
 * [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py)
 * [Huffman Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/Huffman/Huffman.py)
