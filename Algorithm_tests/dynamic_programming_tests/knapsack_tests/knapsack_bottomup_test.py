@@ -3,10 +3,10 @@ import unittest
 
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
-# sys.path.append('Algorithms/cryptology/ceasar_shifting_cipher')
+sys.path.append('Algorithms/dynamic_programming/knapsack')
 
 # If run from local:
-sys.path.append('../../../Algorithms/dynamic_programming/knapsack/')
+#sys.path.append('../../../Algorithms/dynamic_programming/knapsack/')
 from knapsack_bottomup import knapsack
 
 class test_KnapSack(unittest.TestCase):
