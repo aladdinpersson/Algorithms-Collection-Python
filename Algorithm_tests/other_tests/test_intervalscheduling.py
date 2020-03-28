@@ -9,13 +9,27 @@ import unittest
 # If run from local:
 sys.path.append('../../Algorithms/other')
 
-from binarysearch import binarysearch_iterative, binarysearch_recursive
+from interval_scheduling import interval_scheduling
 
 
-class test_binarysearch(unittest.TestCase):
+class test_intervalscheduling(unittest.TestCase):
 
     def setUp(self):
         # test cases we wish to run
+        R1 = [(0, 3), (0, 5), (3, 6),(5, 10)]
+        R1_correct = []
+        r2 = (1, 3)
+        r3 = (0, 5)
+        r4 = (3, 6)
+        r5 = (4, 7)
+        r6 = (3, 9)
+        r7 = (5, 10)
+        r8 = (8, 10)
+
+        R = [r1, r2, r3, r4, r5, r6, r7, r8]
+        O = []
+        O = interval_scheduling(R, O)
+
         self.L1 = [1, 3, 5, 8, 10, 12]
         self.L1_target = 5
         self.L1_correct = True, 2
@@ -23,27 +37,6 @@ class test_binarysearch(unittest.TestCase):
         self.L2 = [1, 3, 5, 8, 10, 12]
         self.L2_target = 6
         self.L2_correct = False, None
-
-        self.L3 = [1,1,1,1,1,1,1,1]
-        self.L3_target = 1
-        self.L3_correct = True, (0+len(self.L3)-1)//2
-
-        self.L4 = [1, 3, 6, 11, 16, 21, 25, 27]
-        self.L4_target = 27
-        self.L4_correct = True, len(self.L4)-1
-
-        self.L5 = [1, 3, 6, 11, 16, 21, 27]
-        self.L5_target = 1
-        self.L5_correct = True, 0
-
-        self.L6 = []
-        self.L6_target = 10
-        self.L6_correct = False, None
-
-        self.L7 = [11,12,15,19,23,41,173,298]
-        self.L7_target = 12
-        self.L7_correct = True, 1
-
 
     def test_binarysearch_basic(self):
         L1_result_iterative = binarysearch_iterative(self.L1, self.L1_target)
