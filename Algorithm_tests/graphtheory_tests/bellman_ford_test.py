@@ -11,7 +11,7 @@ sys.path.append('Algorithms/graphtheory/bellman-ford')
 
 from bellman_ford import bellman_ford, make_graph
 
-class test_sorting(unittest.TestCase):
+class test_BellmanFord(unittest.TestCase):
 
     def test_loadgraph(self):
         correct_graph = {1: {2: 5, 3: 10}, 2: {4: -5}, 3: {4: 15}}
