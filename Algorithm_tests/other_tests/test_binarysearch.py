@@ -4,10 +4,10 @@ import unittest
 
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
-sys.path.append('Algorithms/search')
+sys.path.append('Algorithms/other')
 
 # If run from local:
-# sys.path.append('../../Algorithms/search')
+#sys.path.append('../../Algorithms/other')
 
 from binarysearch import binarysearch_iterative, binarysearch_recursive
 
