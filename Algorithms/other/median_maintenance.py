@@ -14,55 +14,45 @@
 
 import heapq
 
-maxheap = None
-minheap = None
+class Maintain_Median(object):
+    def __init__(self):
+        self.maxheap = []
+        self.minheap = []
 
-def initialize():
-    global maxheap, minheap
-
-    maxheap = []
-    minheap = []
-
-
-def medmain_insert(x):
-    global maxheap, minheap
-
-    if (len(maxheap)==0):
-        heapq.heappush(maxheap, -x)
-    else:
-        m = -maxheap[0]
-        if x > m:
-            heapq.heappush(minheap,x)
-
-            if len(minheap) > len(maxheap):
-                y = heapq.heappop(minheap)
-                heapq.heappush(maxheap, -y)
+    def medmain_insert(self, x):
+        if (len(self.maxheap) == 0):
+            heapq.heappush(self.maxheap, -x)
 
         else:
-            heapq.heappush(maxheap, -x)
+            m = -self.maxheap[0]
+            if x > m:
+                heapq.heappush(self.minheap, x)
 
-            if len(maxheap) - len(minheap) > 1:
-                y = -heapq.heappop(maxheap)
-                heapq.heappush(minheap, y)
+                if len(self.minheap) > len(self.maxheap):
+                    y = heapq.heappop(self.minheap)
+                    heapq.heappush(self.maxheap, -y)
 
-    return -maxheap[0]
+            else:
+                heapq.heappush(self.maxheap, -x)
+
+                if len(self.maxheap) - len(self.minheap) > 1:
+                    y = -heapq.heappop(self.maxheap)
+                    heapq.heappush(self.minheap, y)
+
+        return (-self.maxheap[0] + self.minheap[0])/2 if len(self.maxheap) == len(self.minheap) else -self.maxheap[0]
 
 
-def test():
-    data = [1,3,8,5,10]
+    def main(self, data):
+        if len(data) < 1:
+            return data
 
-    initialize()
+        for x in data:
+            median = self.medmain_insert(x)
 
-    for x in data:
-        median = medmain_insert(x)
+        return median
 
+if __name__ == '__main__':
+    data = [1, 3, 8, 5, 10]
+    maintain_median = Maintain_Median()
+    median = maintain_median.main(data)
     print(median)
-
-heap_low = None
-heap_high = None
-
-test()
-
-
-
-
