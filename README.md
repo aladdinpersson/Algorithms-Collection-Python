@@ -52,7 +52,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * :small_red_triangle: [(simple) Fixpoint iteration](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/numerical_methods/fixpoint.py)
 
 # Other
-* :small_red_triangle: [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py)
+* :white_check_mark: [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py)
 * :small_red_triangle: [Huffman Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/Huffman/Huffman.py)
 * :white_check_mark: [:movie_camera:](https://youtu.be/SmPxC8m0yIY)[Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/interval_scheduling.py) **- O(nlog(n))**
 * :white_check_mark: [Binary Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/search/binarysearch.py) **- O(log(n))** 
