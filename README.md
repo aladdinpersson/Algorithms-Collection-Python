@@ -7,8 +7,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 :small_red_triangle:: If the algorithm is untested
 
 # Dynamic Programming
-* [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_bottomup.py)  **O(nC) Bottom-Up implementation (Loops) :small_red_triangle:**
-* [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_memoization_recursive_topdown.py) **O(nC) - Recursive with memoization implementation :small_red_triangle:**
+* [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_bottomup.py)  **O(nC) Bottom-Up implementation (Loops) :white_check_mark:**
 * [:movie_camera:](https://youtu.be/XmyxiSc3LKg)[Sequence Alignment](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/sequence_alignment.py) **O(nm) :small_red_triangle:**
 * [:movie_camera:](https://youtu.be/dU-coYsd7zw)[Weighted Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/weighted_interval_scheduling.py) **O(nlog(n)) :small_red_triangle:**
 
@@ -55,17 +54,17 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 # Other
 * [Maintaining Median](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/median_maintenance.py) **- :small_red_triangle:**
 * [Huffman Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/Huffman/Huffman.py) **- :small_red_triangle:**
-* [:movie_camera:](https://youtu.be/SmPxC8m0yIY)[Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/interval_scheduling.py) **- O(nlog(n)) :small_red_triangle:**
+* [:movie_camera:](https://youtu.be/SmPxC8m0yIY)[Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/other/interval_scheduling.py) **- O(nlog(n)) :white_check_mark:**
 * [Binary Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/search/binarysearch.py) **- O(log(n)) :small_red_triangle:** 
 
 # Sorting algorithms
-* [Bubble sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/bubblesort.py) **- O(n<sup>2</sup>) :small_red_triangle:** 
+* [Bubble sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/bubblesort.py) **- O(n<sup>2</sup>) :white_check_mark:** 
 * [Hope sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/hopesort.py) **- O(1), hopefully :small_red_triangle:**
-* [Insertion sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/insertionsort.py) **- O(n<sup>2</sup>) :small_red_triangle:** 
-* [Selection sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/selectionsort.py) **- O(n<sup>2</sup>) :small_red_triangle:** 
-* [Merge sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/mergesort.py) **- O(nlog(n)) :small_red_triangle:** 
-* [Randomized Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/randomized_quicksort.py) **- Average O(nlogn) (Input independent!) :small_red_triangle:**
-* [Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/quicksort.py) **- Average O(nlog(n)) :small_red_triangle:**
+* [Insertion sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/insertionsort.py) **- O(n<sup>2</sup>) :white_check_mark:** 
+* [Selection sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/selectionsort.py) **- O(n<sup>2</sup>) :white_check_mark:** 
+* [Merge sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/mergesort.py) **- O(nlog(n)) :white_check_mark:** 
+* [Randomized Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/randomized_quicksort.py) **- Average O(nlogn) (Input independent!) :white_check_mark:**
+* [Quick sort](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/sorting/quicksort.py) **- Average O(nlog(n)) :white_check_mark:**
 
 # Contributing
 I appreciate feedback on potential improvements and/or if you see an error that I've made! Also if you would like to contribute then do a pull request with algorithm & tests! :)
