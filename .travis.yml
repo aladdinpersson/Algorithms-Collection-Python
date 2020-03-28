@@ -14,14 +14,25 @@ before_script:
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
+     # Dynamic Programming Tests
      - python Algorithm_tests/dynamic_programming_tests/knapsack_tests/knapsack_bottomup_test.py
      - python Algorithm_tests/dynamic_programming_tests/sequence_alignment/sequence_alignment_test.py
      - python Algorithm_tests/dynamic_programming_tests/weighted_interval_scheduling/weighted_interval_scheduling_test.py
+     
+     # Graph Theory Tests
      - python Algorithm_tests/graphtheory_tests/bellman_ford_test.py
+     
+     # Math tests
      - python Algorithm_tests/other_tests/test_binarysearch.py
      - python Algorithm_tests/math_tests/intersection_test.py
      - python Algorithm_tests/math_tests/union_test.py
+     
+     # Cryptography tests
      - python Algorithm_tests/cryptology_tests/ceasar_test.py
+     
+     # "Other" tests
      - python Algorithm_tests/other_tests/test_medianmaintenance.py
      - python Algorithm_tests/other_tests/test_intervalscheduling.py
+     
+     # Sorting tests
      - python Algorithm_tests/sorting_tests/test_sorting.py
