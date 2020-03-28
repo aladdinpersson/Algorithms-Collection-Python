@@ -25,4 +25,3 @@ script:
      - python Algorithm_tests/math_tests/union_test.py
      - python Algorithm_tests/cryptology_tests/ceasar_test.py
      - python Algorithm_tests/other_tests/test_intervalscheduling.py
-     - python Algorithm_tests/other_tests/test_medianmaintenance.py
