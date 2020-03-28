@@ -8,7 +8,7 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 
 # Dynamic Programming
 * :white_check_mark: [Knapsack 0/1](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/knapsack/knapsack_bottomup.py)  **O(nC) Bottom-Up implementation (Loops)**
-* :small_red_triangle: [:movie_camera:](https://youtu.be/XmyxiSc3LKg)[Sequence Alignment](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/sequence_alignment.py) **O(nm)**
+* :white_check_mark: [:movie_camera:](https://youtu.be/XmyxiSc3LKg)[Sequence Alignment](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/sequence_alignment.py) **O(nm)**
 * :small_red_triangle: [:movie_camera:](https://youtu.be/dU-coYsd7zw)[Weighted Interval Scheduling](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/dynamic_programming/weighted_interval_scheduling.py) **O(nlog(n))**
 
 # Graph theory
