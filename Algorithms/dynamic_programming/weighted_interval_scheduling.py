@@ -31,8 +31,9 @@ class WeightedIntervalScheduling(object):
     def find_solution(self, j):
         if j == -1:
             return
+
         else:
-            if (self.I[j][2] + self.OPT[self.p[j]]) >= self.OPT[j - 1]:
+            if (self.I[j][2] + self.compute_opt(self.p[j])) > self.compute_opt(j - 1):
                 self.solution.append(self.I[j])
                 self.find_solution(self.p[j])
 
@@ -61,7 +62,7 @@ class WeightedIntervalScheduling(object):
 
         self.find_solution(len(self.I) - 1)
 
-        return self.OPT[-1], self.solution
+        return self.OPT[-1], self.solution[::-1]
 
 if __name__ == '__main__':
     # They are labeled as:  (start, end, weight)
@@ -74,7 +75,7 @@ if __name__ == '__main__':
     t7 = (5,10,2)
     t8 = (8,10,1)
     I = [t1,t2,t3,t4,t5,t6,t7,t8]
-
+    I = [(0, 50, 1), (0, 49, 1), (0, 48, 1), (15, 20, 10)] # --> [(15,20,10), (0,48,1), (0,49, 1), (0,50, 1)]
     weightedinterval = WeightedIntervalScheduling(I)
     max_weight, best_intervals = weightedinterval.weighted_interval()
 
