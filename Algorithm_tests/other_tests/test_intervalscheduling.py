@@ -4,10 +4,10 @@ import unittest
 
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
-#sys.path.append('Algorithms/other')
+sys.path.append('Algorithms/other')
 
 # If run from local:
-sys.path.append('../../Algorithms/other')
+#sys.path.append('../../Algorithms/other')
 
 from interval_scheduling import interval_scheduling
 
@@ -16,78 +16,48 @@ class test_intervalscheduling(unittest.TestCase):
 
     def setUp(self):
         # test cases we wish to run
-        R1 = [(0, 3), (0, 5), (3, 6),(5, 10)]
-        R1_correct = []
-        r2 = (1, 3)
-        r3 = (0, 5)
-        r4 = (3, 6)
-        r5 = (4, 7)
-        r6 = (3, 9)
-        r7 = (5, 10)
-        r8 = (8, 10)
+        self.R1 = [(0, 5), (3, 6),(5, 10)]
+        self.R1_correct = [(0,5), (5,10)]
 
-        R = [r1, r2, r3, r4, r5, r6, r7, r8]
+        self.R2 = []
+        self.R2_correct = []
+
+        self.R3 = [(0, 3), (3,6), (6,9), (9, 10)]
+        self.R3_correct = [(0, 3), (3,6), (6,9), (9, 10)]
+
+        self.R4 = [(1, 3), (0, 2), (1, 4), (2, 5)]
+        self.R4_correct = [(0,2), (2,5)]
+
+        self.R5 = [(0,3)]
+        self.R5_correct = [(0,3)]
+
+
+    def test_intervalscheduling_basic(self):
         O = []
-        O = interval_scheduling(R, O)
+        O = interval_scheduling(self.R1, O)
+        self.assertEqual(O, self.R1_correct)
 
-        self.L1 = [1, 3, 5, 8, 10, 12]
-        self.L1_target = 5
-        self.L1_correct = True, 2
+    def test_intervalscheduling_empty(self):
+        O = []
+        O = interval_scheduling(self.R2, O)
+        self.assertEqual(O, self.R2_correct)
 
-        self.L2 = [1, 3, 5, 8, 10, 12]
-        self.L2_target = 6
-        self.L2_correct = False, None
+    def test_intervalscheduling_take_all(self):
+        O = []
+        O = interval_scheduling(self.R3, O)
+        self.assertEqual(O, self.R3_correct)
 
-    def test_binarysearch_basic(self):
-        L1_result_iterative = binarysearch_iterative(self.L1, self.L1_target)
-        L1_result_recursive = binarysearch_recursive(self.L1, self.L1_target, 0, len(self.L1)-1)
+    def test_intervalscheduling_unsorted(self):
+        O = []
+        O = interval_scheduling(self.R4, O)
+        self.assertEqual(O, self.R4_correct)
 
-        self.assertEqual(L1_result_iterative, self.L1_correct)
-        self.assertEqual(L1_result_recursive, self.L1_correct)
-
-    def test_binarysearch_nonexistant(self):
-        L2_result_iterative = binarysearch_iterative(self.L2, self.L2_target)
-        L2_result_recursive = binarysearch_recursive(self.L2, self.L2_target, 0, len(self.L1)-1)
-
-        self.assertEqual(L2_result_iterative, self.L2_correct)
-        self.assertEqual(L2_result_recursive, self.L2_correct)
-
-    def test_binarysearch_identical(self):
-        L3_result_iterative = binarysearch_iterative(self.L3, self.L3_target)
-        L3_result_recursive = binarysearch_recursive(self.L3, self.L3_target, 0, len(self.L3) - 1)
-
-        self.assertEqual(L3_result_iterative, self.L3_correct)
-        self.assertEqual(L3_result_recursive, self.L3_correct)
-
-    def test_binarysearch_lastvalue(self):
-        L4_result_iterative = binarysearch_iterative(self.L4, self.L4_target)
-        L4_result_recursive = binarysearch_recursive(self.L4, self.L4_target, 0, len(self.L4) - 1)
-
-        self.assertEqual(L4_result_iterative, self.L4_correct)
-        self.assertEqual(L4_result_recursive, self.L4_correct)
-
-    def test_binarysearch_firstvalue(self):
-        L5_result_iterative = binarysearch_iterative(self.L5, self.L5_target)
-        L5_result_recursive = binarysearch_recursive(self.L5, self.L5_target, 0, len(self.L5) - 1)
-
-        self.assertEqual(L5_result_iterative, self.L5_correct)
-        self.assertEqual(L5_result_recursive, self.L5_correct)
-
-    def test_binarysearch_empty(self):
-        L6_result_iterative = binarysearch_iterative(self.L6, self.L6_target)
-        L6_result_recursive = binarysearch_recursive(self.L6, self.L6_target, 0, len(self.L6) - 1)
-
-        self.assertEqual(L6_result_iterative, self.L6_correct)
-        self.assertEqual(L6_result_recursive, self.L6_correct)
-
-    def test_binarysearch_standard(self):
-        L7_result_iterative = binarysearch_iterative(self.L7, self.L7_target)
-        L7_result_recursive = binarysearch_recursive(self.L7, self.L7_target, 0, len(self.L7) - 1)
-
-        self.assertEqual(L7_result_iterative, self.L7_correct)
-        self.assertEqual(L7_result_recursive, self.L7_correct)
+    def test_intervalscheduling_one_element(self):
+        O = []
+        O = interval_scheduling(self.R5, O)
+        self.assertEqual(O, self.R5_correct)
 
 
 if __name__ == '__main__':
-    print("Running sorting tests:")
+    print("Running Interval Scheduling tests:")
     unittest.main()
