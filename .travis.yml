@@ -22,6 +22,8 @@ script:
      # Graph Theory Tests
      - python Algorithm_tests/graphtheory_tests/bellman_ford_test.py
      - python Algorithm_tests/graphtheory_tests/kahn_topological_ordering_test.py
+     - python Algorithm_tests/graphtheory_tests/Djikstra/djikstra_heap_test.py
+     - python Algorithm_tests/graphtheory_tests/Djikstra/djikstra_naive_test.py
      
      # Math tests
      - python Algorithm_tests/other_tests/test_binarysearch.py
