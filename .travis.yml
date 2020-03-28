@@ -9,20 +9,17 @@ before_install:
   - sudo apt-get -y update
   - sudo apt-get -y install ruby-full
 
-#before_install:
-#    - cd Algorithm_tests/sorting_tests
-# Install awesome_bot for README.md broken link checking
-
 before_script:
   - gem install awesome_bot
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
-     - python Algorithm_tests/sorting_tests/test_sorting.py
      - python Algorithm_tests/dynamic_programming_tests/knapsack_tests/knapsack_bottomup_test.py
+     - python Algorithm_tests/dynamic_programming_tests/dynamic_programming_tests/sequence_alignment/sequence_alignment_test.py
      - python Algorithm_tests/graphtheory_tests/bellman_ford_test.py
      - python Algorithm_tests/other_tests/test_binarysearch.py
      - python Algorithm_tests/math_tests/intersection_test.py
      - python Algorithm_tests/math_tests/union_test.py
      - python Algorithm_tests/cryptology_tests/ceasar_test.py
      - python Algorithm_tests/other_tests/test_intervalscheduling.py
+     - python Algorithm_tests/sorting_tests/test_sorting.py
