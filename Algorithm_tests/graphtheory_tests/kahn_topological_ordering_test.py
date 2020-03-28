@@ -4,10 +4,10 @@ import unittest
 
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
-#sys.path.append('Algorithms/graphtheory/kahns-toposort/')
+sys.path.append('Algorithms/graphtheory/kahns-toposort/')
 
 # If run from local:
-sys.path.append('../../Algorithms/graphtheory/kahns-toposort')
+#sys.path.append('../../Algorithms/graphtheory/kahns-toposort')
 
 from kahn_topological_ordering import topological_ordering
 from collections import defaultdict
