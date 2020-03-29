@@ -1,11 +1,13 @@
-# Bottom up implementation of Knapsack (using loops)
+'''
+Purpose is if having a bunch of items with a weight and corresponding value to each object.
+Which collection of objects should we choose such that we maximize the value restricted to
+a specific capacity of weight. Bottom up implementation of Knapsack (using loops)
 
-# Purpose is if having a bunch of items with a weight and corresponding value to each object.
-# Which collection of objects should we choose such that we maximize the value restricted to
-# a specific capacity of weight
+Time Complexity: O(nC), pseudo-polynomial
 
-# Programmed by Aladdin Persson <aladdin dot persson at hotmail dot com>
-#   2020-02-15 Initial programming
+Programmed by Aladdin Persson <aladdin dot persson at hotmail dot com>
+  2020-02-15 Initial programming
+'''
 
 def find_opt(i, c, M, values, items, weights):
     if i <= 0 or c <= 0:
@@ -46,12 +48,12 @@ def knapsack(n, C, weights, values):
     return M[n][C], items[::-1]
 
 
-if __name__ == '__main__':
-   # Run small example
-   weights = [1,2,4,2,5]
-   values = [5,3,5,3,2]
-   n = len(weights)
-   capacity = 3
-   total_value, items = knapsack(n, capacity, weights, values)
-   print('Items at the end: ' + str(items))
-   print('With total value: ' + str(total_value))
+# if __name__ == '__main__':
+#    # Run small example
+#    weights = [1,2,4,2,5]
+#    values = [5,3,5,3,2]
+#    n = len(weights)
+#    capacity = 3
+#    total_value, items = knapsack(n, capacity, weights, values)
+#    print('Items at the end: ' + str(items))
+#    print('With total value: ' + str(total_value))
