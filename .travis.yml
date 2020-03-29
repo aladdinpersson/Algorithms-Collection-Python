@@ -12,7 +12,7 @@ before_install:
 before_script:
   - gem install awesome_bot
 
-install "pip install -r requirements.txt"
+#install "pip install -r requirements.txt"
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
