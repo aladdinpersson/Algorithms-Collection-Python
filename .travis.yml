@@ -13,8 +13,8 @@ before_script:
     - gem install awesome_bot
 
 
-install:
-    - pip3 install unionfind
+#install:
+#    - pip3 install unionfind
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
