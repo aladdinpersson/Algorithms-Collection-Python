@@ -1,7 +1,7 @@
 '''
 Purpose is given a number write it only as a factorization of primes.
 
-Time complexity: O(sqrt(n))
+Time complexity: O(sqrt(n)) PSEUDO-POLYNOMIAL, actually exponential!
 
 Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
 *   2019-03-18 Initial programming
@@ -31,4 +31,4 @@ def primefactorization(n):
 
 if __name__ == '__main__':
     #primefactorization(2**2**6 + 1)
-    primefactorization(9985345712831283923105983448123)
+    primefactorization(123)

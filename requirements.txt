@@ -1,1 +1,5 @@
-unionfind
+unionfind==0.0.10
+numpy==1.18.1
+bitarray==1.2.1
+egcd==0.0.1.1
+sympy==1.5.1
