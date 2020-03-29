@@ -1,10 +1,16 @@
 language: python
 
 # Default Python version is usually 2.7
+python: 3.5
+python: 3.6
 python: 3.7
 
 # Install ruby to get gem command
 before_install:
+    - python --version
+    - pip install -U pip
+    - pip install -U pytest
+    - pip install codecov
     - sudo apt-add-repository -y ppa:brightbox/ruby-ng
     - sudo apt-get -y update
     - sudo apt-get -y install ruby-full
@@ -15,7 +21,7 @@ before_script:
 
 install:
     - pip3 install -r requirements.txt
-    - pip3 install coveralls
+    #- pip3 install coveralls
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
@@ -50,4 +56,4 @@ script:
      - python Algorithm_tests/sorting_tests/test_sorting.py
 
 after_success:
-    - coveralls
+    #- coveralls
