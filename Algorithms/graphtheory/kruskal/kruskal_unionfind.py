@@ -23,7 +23,7 @@ def load_graph(file='edges.txt'):
     return sorted(G), num_nodes
 
 
-def kruskal(G):
+def kruskal(G, num_nodes):
     uf = unionfind(num_nodes)
     tot_cost, MST = 0, []
 
@@ -33,7 +33,7 @@ def kruskal(G):
         if not uf.issame(from_node-1, to_node-1):
             tot_cost += cost
             uf.unite(from_node-1, to_node-1)
-            MST.extend([from_node, to_node])
+            MST.append((from_node, to_node, cost))
 
     return MST, tot_cost
 

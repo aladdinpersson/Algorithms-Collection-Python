@@ -37,7 +37,7 @@ def BFS(G, start_node=1):
 
 if __name__ == '__main__':
     G, num_nodes = load_graph()
-    #G = {1:[2,3], 2:[1,4], 3:[1,4],4:[]}
+    # G = {1:[2,3], 2:[1,4], 3:[1,4],4:[]}
 
     visited, path = BFS(G)
 

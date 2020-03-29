@@ -18,22 +18,17 @@ def load_graph(path = 'edges.txt'):
             node1,node2,edge_cost = [int(i) for i in line.split()]
             edge_list.append( (node1,node2,edge_cost))
 
-
     return edge_list, num_nodes, num_edges
 
-
 def prims_algo(edge_list, num_nodes):
-
     X = []
     V = [i for i in range(1, num_nodes + 1)]
     E = []
     total_cost = 0
-
     start = 1
 
     X.append(start)
     V.remove(start)
-
 
     while len(V) != 0:
         lowest_cost = float('inf')
@@ -67,9 +62,6 @@ if __name__ == '__main__':
 
     edge_list, num_nodes, num_edges = load_graph()
 
-    E,tot_cost = prims_algo(edge_list, num_nodes)
-
-    #print(E)
-    print(f'total cost of minimum spanning tree is {tot_cost}')
+    E, tot_cost = prims_algo(edge_list, num_nodes)
 
 

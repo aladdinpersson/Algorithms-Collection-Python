@@ -1,15 +1,14 @@
-# Kruskal's algorithm for finding minimal spanning tree (MST) of a graph.
+'''
+Kruskal's algorithm for finding minimal spanning tree (MST) of a graph.
 
-# Aladdin Persson <aladdin.persson at hotmail dot com>
-#   2019-02-16 Initial programming
+Aladdin Persson <aladdin.persson at hotmail dot com>
+    2019-02-16 Initial programming
 
-# Improvements:
-# * The for-loop inside Kruskal can be improved for sure. Not sure exactly how to do it though
+'''
 
 import sys
-sys.path.append('graphtheory/depth-first-search')
+sys.path.append('../depth-first-search')
 from DFS_stack_iterative import DFS
-
 
 def load_graph(file='edges.txt'):
     G = []
@@ -28,8 +27,7 @@ def load_graph(file='edges.txt'):
 
     return sorted(G), num_nodes
 
-
-def kruskal(G):
+def kruskal(G, num_nodes):
     MST = []
     tot_cost = 0
     temp_G = {key: [] for key in range(1, num_nodes + 1)}
@@ -62,8 +60,6 @@ if __name__ == '__main__':
     G, num_nodes = load_graph()
 
     print(f'Our loaded graph is: {G}')
-    print()
-
     MST, total_cost = kruskal(G)
 
     print(f'Our minimum spanning tree is: {MST}')

@@ -18,13 +18,13 @@ Whenever I face an interesting problem I document the algorithm that I learned t
 * :white_check_mark: [Dijkstra Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/dijkstra/djikstra.py) **- Naive implementation**
 * :white_check_mark: [Dijkstra Shortest Path](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/dijkstra/heapdijkstra.py) **O(mlog(n)) - Heap implementation**
 * :small_red_triangle: [Karger's Minimum cut](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kargers/kargermincut.py)
-* :small_red_triangle: [Prim's Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/prims/prims_algorithm.py) **- Naive implementation**
-* :small_red_triangle: [Prim's Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/prims/primheap.py) **- mlog(n)**
-* :small_red_triangle: [Kruskal's Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kruskal/kruskal.py) **- Naive implementation**
-* :small_red_triangle: [Kruskal's Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kruskal/kruskal_unionfind.py) **- mlog(n)**
-* :small_red_triangle: [Breadth First Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/breadth-first-search/BFS_queue_iterative.py) **O(n + m) - Queue Implementation**
-* :small_red_triangle: [Depth First Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/depth-first-search/DFS_stack_iterative.py) **O(n + m) - Stack Implementation**
-* :small_red_triangle: [Depth First Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/depth-first-search/DFS_recursive.py) **O(n + m) - Recursive Implementation**
+* :small_red_triangle: [Prim's Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/prims/prims_algorithm.py) **- O(mn) Naive implementation**
+* :white_check_mark: [Prim's Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/prims/primheap.py) **- O(mlog(n))**
+* :small_red_triangle: [Kruskal's Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kruskal/kruskal.py) **- O(mn) implementation**
+* :white_check_mark: [Kruskal's Algorithm](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/kruskal/kruskal_unionfind.py) **- O(mlog(n))**
+* :white_check_mark: [Breadth First Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/breadth-first-search/BFS_queue_iterative.py) **O(n + m) - Queue Implementation**
+* :white_check_mark: [Depth First Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/depth-first-search/DFS_stack_iterative.py) **O(n + m) - Stack Implementation**
+* :white_check_mark: [Depth First Search](https://github.com/AladdinPerzon/Algorithms-Collection-Python/blob/master/Algorithms/graphtheory/depth-first-search/DFS_recursive.py) **O(n + m) - Recursive Implementation**
 
 # Mathematics
 ### Algebra

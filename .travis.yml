@@ -14,6 +14,7 @@ before_script:
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
+     
      # Dynamic Programming Tests
      - python Algorithm_tests/dynamic_programming_tests/knapsack_tests/knapsack_bottomup_test.py
      - python Algorithm_tests/dynamic_programming_tests/sequence_alignment/sequence_alignment_test.py
@@ -24,6 +25,10 @@ script:
      - python Algorithm_tests/graphtheory_tests/kahn_topological_ordering_test.py
      - python Algorithm_tests/graphtheory_tests/Djikstra/djikstra_heap_test.py
      - python Algorithm_tests/graphtheory_tests/Djikstra/djikstra_naive_test.py
+     - python Algorithm_tests/graphtheory_tests/prims_algorithm_test.py
+     - python Algorithm_tests/graphtheory_tests/kruskal_unionfind_test.py
+     - python Algorithm_tests/graphtheory_tests/BFS_test.py
+     - python Algorithm_tests/graphtheory_tests/DFS_test.py
      
      # Math tests
      - python Algorithm_tests/other_tests/test_binarysearch.py
