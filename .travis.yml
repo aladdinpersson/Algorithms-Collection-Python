@@ -12,9 +12,12 @@ before_install:
 before_script:
   - gem install awesome_bot
 
+
+install:
+    - pip install -r requirements.txt
+    
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
-     
      # Dynamic Programming Tests
      - python Algorithm_tests/dynamic_programming_tests/knapsack_tests/knapsack_bottomup_test.py
      - python Algorithm_tests/dynamic_programming_tests/sequence_alignment/sequence_alignment_test.py
@@ -26,7 +29,7 @@ script:
      - python Algorithm_tests/graphtheory_tests/Djikstra/djikstra_heap_test.py
      - python Algorithm_tests/graphtheory_tests/Djikstra/djikstra_naive_test.py
      - python Algorithm_tests/graphtheory_tests/prims_algorithm_test.py
-     - python Algorithm_tests/graphtheory_tests/kruskal_unionfind_test.py
+     #- python Algorithm_tests/graphtheory_tests/kruskal_unionfind_test.py
      - python Algorithm_tests/graphtheory_tests/BFS_test.py
      - python Algorithm_tests/graphtheory_tests/DFS_test.py
      
