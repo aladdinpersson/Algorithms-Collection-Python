@@ -22,8 +22,10 @@ install:
     - pip3 install pytest-cov
     - pip3 install codecov
 
-script: pytest --cov=Algorithms/
-     # - awesome_bot README.md --allow-dupe --allow-redirect
+script: 
+    #- awesome_bot README.md --allow-dupe --allow-redirect
+    - pytest --cov=Algorithms/
+    
      # # Dynamic Programming Tests
      # - python Algorithm_tests/dynamic_programming_tests/knapsack_tests/knapsack_bottomup_test.py
      # - python Algorithm_tests/dynamic_programming_tests/sequence_alignment/sequence_alignment_test.py
