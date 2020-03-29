@@ -18,9 +18,9 @@ before_script:
 
 install:
     - pip3 install -r requirements.txt
-    - pip3 install codecov
+    - pip3 install coveralls
 
-script: pytest
+script: pytest --cov=Algorithm_tests/
      # - awesome_bot README.md --allow-dupe --allow-redirect
      # # Dynamic Programming Tests
      # - python Algorithm_tests/dynamic_programming_tests/knapsack_tests/knapsack_bottomup_test.py
@@ -53,4 +53,4 @@ script: pytest
      # - python Algorithm_tests/sorting_tests/test_sorting.py
 
 after_success:
-    - codecov
+    - coveralls
