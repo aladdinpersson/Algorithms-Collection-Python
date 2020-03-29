@@ -9,7 +9,6 @@ def merge_sort(array):
 
     return merge(left, right)
 
-
 def merge(left, right):
     result = []
     left_pointer = right_pointer = 0
@@ -28,9 +27,9 @@ def merge(left, right):
 
     return result
 
-if __name__ == "__main__":
-    array = [5, 4, 3, 2, 1]
-    print(array)
-
-    result = merge_sort(array)
-    print(result)
+# if __name__ == "__main__":
+#     array = [5, 4, 3, 2, 1]
+#     print(array)
+#
+#     result = merge_sort(array)
+#     print(result)
