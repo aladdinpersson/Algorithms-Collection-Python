@@ -4,10 +4,10 @@ import unittest
 
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
-#sys.path.append('Algorithms/graphtheory/kruskal/')
+sys.path.append('Algorithms/graphtheory/kruskal/')
 
 # If run from local:
-sys.path.append('../../Algorithms/graphtheory/kruskal/')
+#sys.path.append('../../Algorithms/graphtheory/kruskal/')
 from kruskal_unionfind import kruskal
 
 class test_Kruskal(unittest.TestCase):

@@ -36,8 +36,6 @@ def DFS(G, start_node):
                     stack.append(connected_node)
                     path.append(connected_node)
 
-    print(f'Total time: {total_time} seconds')
-
     return visited, path
 
 if __name__ == '__main__':
