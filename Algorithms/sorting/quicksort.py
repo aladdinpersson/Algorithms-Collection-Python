@@ -1,14 +1,10 @@
 # Quicksort with pivot always using first index as pivot
 
 def quicksort_firstpivot(L):
-    # global count_comparisons
-
     if len(L) <= 1:
         return L
 
     pivot = L[0]
-
-    # count_comparisons += len(x) - 1
 
     i = 0
 
@@ -27,15 +23,11 @@ def quicksort_firstpivot(L):
 
 # Quicksort with pivot always using last index as pivot
 def quicksort_lastpivot(x):
-    global count_comparisons
-
     if len(x) <= 1:
         return x
 
     x[0], x[-1] = x[-1], x[0]
     pivot = x[0]
-
-    count_comparisons += len(x) - 1
 
     i = 0
 
