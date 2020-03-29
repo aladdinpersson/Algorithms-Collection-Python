@@ -16,10 +16,9 @@ before_install:
 before_script:
     - gem install awesome_bot
 
-
 install:
     - pip3 install -r requirements.txt
-    - pip3 install coveralls
+    - pip3 install codecov
 
 script: pytest
      # - awesome_bot README.md --allow-dupe --allow-redirect
@@ -54,4 +53,4 @@ script: pytest
      # - python Algorithm_tests/sorting_tests/test_sorting.py
 
 after_success:
-    - coveralls
+    - codecov
