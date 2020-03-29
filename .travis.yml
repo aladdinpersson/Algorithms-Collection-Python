@@ -11,6 +11,7 @@ before_install:
 
 before_script:
     - gem install awesome_bot
+    - pip3 install unionfind
 
 #install:
 #    - "pip install -r requirements.txt"
