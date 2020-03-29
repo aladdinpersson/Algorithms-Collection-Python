@@ -28,7 +28,7 @@ script:
      - python Algorithm_tests/graphtheory_tests/kahn_topological_ordering_test.py
      - python Algorithm_tests/graphtheory_tests/Djikstra/djikstra_heap_test.py
      - python Algorithm_tests/graphtheory_tests/Djikstra/djikstra_naive_test.py
-     #- python Algorithm_tests/graphtheory_tests/kruskal_unionfind_test.py
+     - python Algorithm_tests/graphtheory_tests/kruskal_unionfind_test.py
      - python Algorithm_tests/graphtheory_tests/prims_algorithm_test.py
      - python Algorithm_tests/graphtheory_tests/BFS_test.py
      - python Algorithm_tests/graphtheory_tests/DFS_test.py
