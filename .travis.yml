@@ -20,7 +20,7 @@ install:
     - pip3 install -r requirements.txt
     - pip3 install pytest
     - pip3 install pytest-cov
-    - pip3 install coveralls
+    - pip3 install codecov
 
 script: pytest --cov=Algorithm_tests/
      # - awesome_bot README.md --allow-dupe --allow-redirect
@@ -55,4 +55,4 @@ script: pytest --cov=Algorithm_tests/
      # - python Algorithm_tests/sorting_tests/test_sorting.py
 
 after_success:
-    - coveralls
+    - codecov
