@@ -12,10 +12,6 @@ sys.path.append('Algorithms/graphtheory/bellman-ford')
 from bellman_ford import bellman_ford
 
 class test_BellmanFord(unittest.TestCase):
-    def test_loadmissingfile(self):
-        with self.assertRaises(IOError):
-            graph = make_graph('this_file_doesnt_exist.txt')
-
     def test_negativecycle(self):
         # Because of negative cycles, we shall denote the shortest path for these
         # as -infinity.
