@@ -8,14 +8,13 @@ before_install:
     - sudo apt-add-repository -y ppa:brightbox/ruby-ng
     - sudo apt-get -y update
     - sudo apt-get -y install ruby-full
-    - pip3 install unionfind
 
 before_script:
     - gem install awesome_bot
 
 
-#install:
-#    - "pip install -r requirements.txt"
+install:
+    - pip3 install unionfind
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
