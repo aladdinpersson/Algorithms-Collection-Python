@@ -12,7 +12,7 @@ sys.path.append('Algorithms/sorting')
 from bubblesort import bubblesort
 from insertionsort import insertionsort
 from mergesort import merge_sort, merge
-from quicksort import quicksort_firstpivot
+from quicksort import quicksort_firstpivot, quicksort_lastpivot
 from randomized_quicksort import quicksort_randomized
 from selectionsort import selectionsort
 
@@ -76,6 +76,16 @@ class test_sorting(unittest.TestCase):
         self.assertEqual(quicksort_firstpivot(L5), L5_sorted)
         self.assertEqual(quicksort_firstpivot(L6), L6_sorted)
         self.assertEqual(quicksort_firstpivot(L7), L7_sorted)
+
+        self.assertEqual(quicksort_lastpivot(L1), L1_sorted)
+        self.assertEqual(quicksort_lastpivot(L2), L2_sorted)
+        self.assertEqual(quicksort_lastpivot(L3), L3_sorted)
+        self.assertEqual(quicksort_lastpivot(L4), L4_sorted)
+        self.assertEqual(quicksort_lastpivot(L5), L5_sorted)
+        self.assertEqual(quicksort_lastpivot(L6), L6_sorted)
+        self.assertEqual(quicksort_lastpivot(L7), L7_sorted)
+
+
 
     def test_selectionsort(self):
         self.assertEqual(selectionsort(L1), L1_sorted)
