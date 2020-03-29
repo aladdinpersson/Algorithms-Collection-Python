@@ -20,21 +20,21 @@ def interval_scheduling(R, O):
 
     return O
 
-def interval_scheduling_complicated_version(R, O):
-    while R: # keep going while R still has elements
-        (si, fi) = R[0]
-        O.append((si,fi))
-        idx = 0
-
-        while idx < len(R):
-            (sj, fj) = R[idx]
-
-            if fi > sj:
-                R.remove(R[idx])
-                idx -= 1
-
-            idx += 1
-    return O
+# def interval_scheduling_complicated_version(R, O):
+#     while R: # keep going while R still has elements
+#         (si, fi) = R[0]
+#         O.append((si,fi))
+#         idx = 0
+#
+#         while idx < len(R):
+#             (sj, fj) = R[idx]
+#
+#             if fi > sj:
+#                 R.remove(R[idx])
+#                 idx -= 1
+#
+#             idx += 1
+#     return O
 
 if __name__ == '__main__':
     # run small example

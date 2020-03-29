@@ -3,6 +3,8 @@ Purpose is to find the shortest path between one source node to all other nodes 
 The difference between Dijkstra and this is that this can handle negative edges. We do pay for this as it is
 a lot slower than Dijkstra.
 
+Time Complexity: O(mn)
+
 Programmed by Aladdin Persson <aladdin dot persson at hotmail dot com>
   2019-03-04 Initial programming
 '''
@@ -42,7 +44,6 @@ def bellman_ford(G, start):
     for _ in range(num_vertices - 1):
         for from_node in G:
             for to_node, weight in G[from_node].items():
-
                 if shortest_distance[from_node] + weight < shortest_distance[to_node]:
                     shortest_distance[to_node] = shortest_distance[from_node] + weight
                     predecessor[to_node] = from_node

@@ -7,21 +7,21 @@
 # Programmed by Aladdin Persson <aladdin dot persson at hotmail dot com>
 #   2020-02-15 Initial programming
 
-def find_opt(i, c, M, values, items):
+def find_opt(i, c, M, values, items, weights):
     if i <= 0 or c <= 0:
         return items
 
     if (M[i-1][c] >= (values[i-1] + M[i-1][c - weights[i-1]])) or (c - weights[i-1]) < 0:
-        find_opt(i-1, c, M, values, items)
+        find_opt(i-1, c, M, values, items, weights)
         
     else:
         items.append(i-1)
-        find_opt(i-1, c-weights[i-1], M, values, items)
+        find_opt(i-1, c-weights[i-1], M, values, items, weights)
         
 def knapsack(n, C, weights, values):
     # Initialization of matrix of size (n*W)
     M = [[None for i in range(C + 1)] for j in range(len(values) + 1)]
-    
+
     for c in range(C+1):
         M[0][c] = 0
 
@@ -30,7 +30,6 @@ def knapsack(n, C, weights, values):
 
     for i in range(1, n+1):
         for c in range(1, C+1):
-
             # If current weight exceeds capacity then we cannot take it
             if weights[i - 1] > c:
                 M[i][c] = M[i-1][c]
@@ -40,7 +39,8 @@ def knapsack(n, C, weights, values):
             else:
                 M[i][c] = max(M[i-1][c], values[i-1] + M[i-1][c-weights[i-1]])
     items = []
-    find_opt(n, C, M, values, items)
+
+    find_opt(n, C, M, values, items, weights)
 
 
     return M[n][C], items[::-1]

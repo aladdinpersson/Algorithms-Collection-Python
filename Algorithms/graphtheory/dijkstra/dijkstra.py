@@ -1,5 +1,10 @@
-# Dijkstra's algorithm for finding the shortest path in a graph
-# Programmed 2019-01-28 <aladdin.persson at hotmail dot com>
+'''
+Dijkstra's algorithm for finding the shortest path in a graph
+
+Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
+    2019-01-28 Initial programming
+    2020-03-28 Cleaned up code
+'''
 
 def make_graph(file):
     try:
@@ -9,16 +14,16 @@ def make_graph(file):
 
     line_list = f.readlines()
 
-    # Found on mukeshmithrakumar github, thought this was clean..
-    # populate the graph using data from the text file via dictionary comprehensions
     G = {int(line.split()[0]): {(int(tup.split(',')[0])): int(tup.split(',')[1])
                                 for tup in line.split()[1:] if tup} for line in line_list if line}
 
     f.close()
     return G
 
-
 def dijkstra(G, start, end):
+    if start not in G or end not in G:
+        return [], float('inf')
+
     shortest_distance = {}
     predecessor = {}
     unseenNodes = G
@@ -34,7 +39,6 @@ def dijkstra(G, start, end):
     while unseenNodes:
         minNode = None
 
-        # priority-queue? -> Hittar bästa noden hittils
         for node in unseenNodes:
             if minNode is None:
                 minNode = node
@@ -49,8 +53,7 @@ def dijkstra(G, start, end):
 
         unseenNodes.pop(minNode)
 
-    print("pred")
-    print(predecessor)
+    # Find path from start node s to end node t
     currentNode = end
 
     while currentNode != start:
@@ -58,23 +61,24 @@ def dijkstra(G, start, end):
             path.insert(0, currentNode)
             currentNode = predecessor[currentNode]
         except KeyError:
-            print('Path not reachable')
-            break
+            return [], float('inf')
+
     path.insert(0,start)
+
 
     return path, shortest_distance[end]
 
 
+if __name__ == '__main__':
+    #G = make_graph('dijkstraData.txt')
 
+    G =  {1:{2:10, 3:20},
+          2:{4:40},
+          3:{4:5},
+          4:{}}
 
-#G = make_graph('dijkstraData.txt')
+    print(f'Current graph is: {G}')
+    path, shortest = dijkstra(G, 1, 4)
 
-G =  {1:{2:10, 3:20},
-      2:{4:40},
-      3:{4:5},
-      4:{}}
-print(f'Current graph is: {G}')
-path, shortest = dijkstra(G, 1, 4)
-
-print(path)
-print(shortest)
+    print(path)
+    print(shortest)

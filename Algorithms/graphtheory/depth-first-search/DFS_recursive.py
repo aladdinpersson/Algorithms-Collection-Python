@@ -20,7 +20,7 @@ def load_graph(file='exgraph.txt'):
     return G, num_nodes
 
 
-def DFS(curr_node):
+def DFS(G, curr_node, visited):
     if visited[curr_node - 1]:
         return
 
@@ -30,7 +30,7 @@ def DFS(curr_node):
     neighbours = G[curr_node]
 
     for next_node in neighbours:
-        DFS(next_node)
+        DFS(G, next_node, visited)
 
 if __name__ == '__main__':
     print('Loading graph and print:')
@@ -42,10 +42,12 @@ if __name__ == '__main__':
     except TypeError:
         raise("Error loading graph.")
 
-    visited = [False for i in range(1, num_nodes + 1)]
+    # G = {1: [2], 2: [1, 3, 4], 3: [2], 4: [2, 5], 5: [4]}
+
+    visited = [False for i in range(1, len(G) + 1)]
     start_node = 1
 
-    DFS(start_node)
+    DFS(G, start_node, visited)
 
     if any(visited) == False:
         print("Result: This graph is connected!")
