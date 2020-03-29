@@ -23,7 +23,7 @@ install:
     - pip3 install codecov
 
 script: 
-    #- awesome_bot README.md --allow-dupe --allow-redirect
+    - awesome_bot README.md --allow-dupe --allow-redirect
     - pytest --cov=Algorithms/
     
      # # Dynamic Programming Tests
