@@ -15,6 +15,7 @@ before_script:
 
 install:
     - pip3 install -r requirements.txt
+    - pip3 install coveralls
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
@@ -47,3 +48,6 @@ script:
      
      # Sorting tests
      - python Algorithm_tests/sorting_tests/test_sorting.py
+
+after_success:
+    - coveralls
