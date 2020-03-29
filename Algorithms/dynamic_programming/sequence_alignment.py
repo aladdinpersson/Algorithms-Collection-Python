@@ -1,17 +1,22 @@
-# Algorithm for solving sequence alignment
-# Input strings x,y of len(x) = m, len(y) = n and find minimum number of
-# edit steps and the specific steps to transform x into y.
+'''
+Algorithm for solving sequence alignment
+Input strings x,y of len(x) = m, len(y) = n and find minimum number of
+edit steps and the specific steps to transform x into y.
 
-# Video of algorithm explanation: https://youtu.be/bQ7kRW6zo9Y
-# Video of code explanation: https://youtu.be/XmyxiSc3LKg
+Time Complexity: O(nm)
 
-# Programmed by Aladdin Persson <aladdin dot persson at hotmail dot com>
-#   2020-02-15 Initial coding
-#   2020-02-16 Improved find_solution and made code cleaner
-#   2020-03-13 There was an error in the code in function find_solution,
-#              I was working with list indexing as if it was a matrix.
-#              Should be working now. Extensive testing would be good.
-#   2020-03-28 Cleaned up code by making SequenceAlignment into class
+Video of algorithm explanation: https://youtu.be/bQ7kRW6zo9Y
+Video of code explanation: https://youtu.be/XmyxiSc3LKg
+
+Programmed by Aladdin Persson <aladdin dot persson at hotmail dot com>
+  2020-02-15 Initial coding
+  2020-02-16 Improved find_solution and made code cleaner
+  2020-03-13 There was an error in the code in function find_solution,
+             I was working with list indexing as if it was a matrix.
+             Should be working now. Extensive testing would be good.
+
+  2020-03-28 Cleaned up code by making SequenceAlignment into class
+'''
 
 class SequenceAlignment(object):
     def __init__(self, x, y):
@@ -63,11 +68,11 @@ class SequenceAlignment(object):
 
         return (OPT[m][n], self.solution[::-1])
 
-if __name__ == '__main__':
-    x = 'TGACGTGC'
-    y = 'TCGACGTCA'
-    print('We we want to transform: ' + x + ' to: ' + y)
-    sqalign = SequenceAlignment(x, y)
-    min_edit, steps = sqalign.alignment()
-    print('Minimum amount of edit steps are: ' + str(min_edit))
-    print('And the way to do it is: ' + str(steps))
+# if __name__ == '__main__':
+#     x = 'TGACGTGC'
+#     y = 'TCGACGTCA'
+#     print('We we want to transform: ' + x + ' to: ' + y)
+#     sqalign = SequenceAlignment(x, y)
+#     min_edit, steps = sqalign.alignment()
+#     print('Minimum amount of edit steps are: ' + str(min_edit))
+#     print('And the way to do it is: ' + str(steps))

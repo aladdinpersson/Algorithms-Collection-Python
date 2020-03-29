@@ -1,12 +1,14 @@
-# Weighted Interval Scheduling
-# Explained YouTube video: https://www.youtube.com/watch?v=iIX1YvbLbvc
-# Implementation walkthrough video: https://www.youtube.com/watch?v=dU-coYsd7zw
+'''
+Weighted Interval Scheduling
+Explained YouTube video: https://www.youtube.com/watch?v=iIX1YvbLbvc
+Implementation walkthrough video: https://www.youtube.com/watch?v=dU-coYsd7zw
 
-# Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
-#   2020-02-13 Initial programming
-#   2020-03-28 Cleaned up code by making WeightedIntervalScheduling class
+Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
+  2020-02-13 Initial programming
+  2020-03-28 Cleaned up code by making WeightedIntervalScheduling class
 
-# Time complexity: O(nlogn)
+Time complexity: O(nlogn)
+'''
 
 import bisect
 
@@ -64,21 +66,19 @@ class WeightedIntervalScheduling(object):
 
         return self.OPT[-1], self.solution[::-1]
 
-if __name__ == '__main__':
-    # They are labeled as:  (start, end, weight)
-    t1 = (0,3,3)
-    t2 = (1,4,2)
-    t3 = (0,5,4)
-    t4 = (3,6,1)
-    t5 = (4,7,2)
-    t6 = (3,9,5)
-    t7 = (5,10,2)
-    t8 = (8,10,1)
-    I = [t1,t2,t3,t4,t5,t6,t7,t8]
-    I = [(0, 50, 1), (0, 49, 1), (0, 48, 1), (15, 20, 10)] # --> [(15,20,10), (0,48,1), (0,49, 1), (0,50, 1)]
-    weightedinterval = WeightedIntervalScheduling(I)
-    max_weight, best_intervals = weightedinterval.weighted_interval()
-
-    #max_weight = weighted_interval(I)
-    print('Maximum weight: ' + str(max_weight))
-    print('The best items to take are: ' + str(best_intervals[::-1]))
+# Small Example
+# if __name__ == '__main__':
+#     # They are labeled as:  (start, end, weight)
+#     t1 = (0,3,3)
+#     t2 = (1,4,2)
+#     t3 = (0,5,4)
+#     t4 = (3,6,1)
+#     t5 = (4,7,2)
+#     t6 = (3,9,5)
+#     t7 = (5,10,2)
+#     t8 = (8,10,1)
+#     I = [t1,t2,t3,t4,t5,t6,t7,t8]
+#     weightedinterval = WeightedIntervalScheduling(I)
+#     max_weight, best_intervals = weightedinterval.weighted_interval()
+#     print('Maximum weight: ' + str(max_weight))
+#     print('The best items to take are: ' + str(best_intervals))
