@@ -14,8 +14,8 @@ before_script:
 
 
 install:
-    - pip3 install unionfind
-    #- pip3 install -r requirements.txt
+    #- pip3 install unionfind
+    - pip3 install -r requirements.txt
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
