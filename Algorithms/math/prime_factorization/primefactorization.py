@@ -31,4 +31,4 @@ def primefactorization(n):
 
 if __name__ == '__main__':
     #primefactorization(2**2**6 + 1)
-    primefactorization(137)
+    primefactorization(9985345712831283923105983448123)

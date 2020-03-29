@@ -1,6 +1,7 @@
 # Import folder where sorting algorithms
 import sys
 import unittest
+from unionfind import unionfind
 
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
