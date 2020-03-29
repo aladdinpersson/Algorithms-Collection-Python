@@ -5,14 +5,15 @@ python: 3.7
 
 # Install ruby to get gem command
 before_install:
-  - sudo apt-add-repository -y ppa:brightbox/ruby-ng
-  - sudo apt-get -y update
-  - sudo apt-get -y install ruby-full
+    - sudo apt-add-repository -y ppa:brightbox/ruby-ng
+    - sudo apt-get -y update
+    - sudo apt-get -y install ruby-full
 
 before_script:
-  - gem install awesome_bot
+    - gem install awesome_bot
 
-#install "pip install -r requirements.txt"
+#install:
+#    - "pip install -r requirements.txt"
 
 script:
      - awesome_bot README.md --allow-dupe --allow-redirect
