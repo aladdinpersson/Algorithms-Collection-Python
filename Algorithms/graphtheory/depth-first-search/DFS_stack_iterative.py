@@ -7,20 +7,12 @@ Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
     2020-03-29 Cleaned up code, made test cases
 '''
 
-
-def load_graph(file='exgraph.txt'):
-    data = open(file, 'r')
-    G = {}
-
-    for line in data:
-        lst = [int(x) for x in line.split()]
-        G[lst[0]] = lst[1:]
-
-    num_nodes = len(G)
-
-    return G, num_nodes
-
 def DFS(G, start_node):
+    '''
+    :param G: Graph with G = {from_node1:[to_node1, to_node2], from_node2: [to_node,] etc}
+    :param start_node: starting node to run BFS from
+    :return: returns visited boolean array and path in which order it visited them
+    '''
     visited = [False for i in range(1, len(G) + 1)]
     path = [start_node]
     stack = []
@@ -38,12 +30,12 @@ def DFS(G, start_node):
 
     return visited, path
 
-if __name__ == '__main__':
-    G, num_nodes = load_graph()
-    start_node = 1
-    visited = DFS(G, start_node)
-
-    if all(visited) == True:
-        print("Return: This graph is connected!")
-    else:
-        print("Not all nodes were reachable, i.e the graph is not connected.")
+# if __name__ == '__main__':
+#     G = {1: [2, 3], 2: [1, 4], 3: [1, 4], 4: []}
+#     start_node = 1
+#     visited = DFS(G, start_node)
+#
+#     if all(visited) == True:
+#         print("Return: This graph is connected!")
+#     else:
+#         print("Not all nodes were reachable, i.e the graph is not connected.")

@@ -9,23 +9,12 @@ Programmed by Aladdin Persson <aladdin dot persson at hotmail dot com>
   2019-03-04 Initial programming
 '''
 
-def make_graph(file):
-    try:
-        f = open(file, 'r')
-    except IOError:
-        raise IOError("File does not exist!")
-
-    line_list = f.readlines()
-
-    G = {int(line.split()[0]): {(int(tup.split(',')[0])): int(tup.split(',')[1])
-                                for tup in line.split()[1:] if tup} for line in line_list if line}
-
-    f.close()
-
-    return G
-
-
 def bellman_ford(G, start):
+    '''
+    :param G: {from_node1: {to_node1, cost1, to_node2, cost2}, from_node2: {etc}}
+    :param start: node to start from
+    '''
+
     if len(G) == 0:
         raise ValueError("There should be something in the graph")
 
@@ -56,14 +45,12 @@ def bellman_ford(G, start):
 
     return shortest_distance, predecessor
 
-if __name__ == '__main__':
-    # G = make_graph('data.txt')
-
-    G = {1: {2: -10, 3: 20},
-         2: {4: 40},
-         3: {4: 5},
-         4: {}}
-
-    print(f'Current graph is: {G}')
-    shortest, predecessor = bellman_ford(G, 1)
-    print(shortest)
+# if __name__ == '__main__':
+#     G = {1: {2: -10, 3: 20},
+#          2: {4: 40},
+#          3: {4: 5},
+#          4: {}}
+#
+#     print(f'Current graph is: {G}')
+#     shortest, predecessor = bellman_ford(G, 1)
+#     print(shortest)

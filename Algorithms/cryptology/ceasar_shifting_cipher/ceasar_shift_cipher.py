@@ -41,13 +41,13 @@ def decrypt(cipher, shift=3):
 
     return decrypted
 
-def main():
-    message = 'attackatnoon'
-    cipher = encrypt(message, shift=3)
-    decrypted = decrypt(cipher, shift=3)
-
-    print('Original message: ' + message)
-    print('Encrypted message: ' + cipher)
-    print('Decrypted message: ' + decrypted)
-
-main()
+# def main():
+#     message = 'attackatnoon'
+#     cipher = encrypt(message, shift=3)
+#     decrypted = decrypt(cipher, shift=3)
+#
+#     print('Original message: ' + message)
+#     print('Encrypted message: ' + cipher)
+#     print('Decrypted message: ' + decrypted)
+#
+# main()
