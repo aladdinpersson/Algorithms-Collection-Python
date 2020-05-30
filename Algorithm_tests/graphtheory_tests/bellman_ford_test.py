@@ -36,7 +36,7 @@ class test_BellmanFord(unittest.TestCase):
         self.assertEqual(shortest_dist[3], 5)
         self.assertEqual(shortest_dist[4], 35)
 
-    def test_emptygraph(self):
+    def test_run_emptygraph(self):
         G = {}
         start_node = 1
 
