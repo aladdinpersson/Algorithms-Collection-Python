@@ -13,8 +13,9 @@ import random, copy
 
 random.seed(1)
 
+
 def load_graph():
-    data = open('data.txt', 'r')
+    data = open("data.txt", "r")
     G = {}
 
     for line in data:
@@ -65,6 +66,7 @@ def main():
             count = min_cut
 
     return count
+
 
 val = main()
 print(val)

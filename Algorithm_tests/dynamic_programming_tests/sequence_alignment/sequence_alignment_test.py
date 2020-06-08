@@ -3,57 +3,58 @@ import unittest
 
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
-sys.path.append('Algorithms/dynamic_programming/')
+sys.path.append("Algorithms/dynamic_programming/")
 
 # If run from local:
-#sys.path.append('../../../Algorithms/dynamic_programming/')
+# sys.path.append('../../../Algorithms/dynamic_programming/')
 from sequence_alignment import SequenceAlignment
+
 
 class test_sequence_alignment(unittest.TestCase):
     def setUp(self):
-        self.x1 = 'ABC'
-        self.y1 = 'ADC'
+        self.x1 = "ABC"
+        self.y1 = "ADC"
         self.correct_editstep1 = 1
 
-        self.x2 = 'AB'
-        self.y2 = 'A'
+        self.x2 = "AB"
+        self.y2 = "A"
         self.correct_editstep2 = 1
 
-        self.x3 = 'A'
-        self.y3 = ''
+        self.x3 = "A"
+        self.y3 = ""
         self.correct_editstep3 = 1
 
-        self.x4 = 'ABC'
-        self.y4 = 'ABCDE'
+        self.x4 = "ABC"
+        self.y4 = "ABCDE"
         self.correct_editstep4 = 2
 
-        self.x5 = 'ABCKL'
-        self.y5 = 'ADCE'
+        self.x5 = "ABCKL"
+        self.y5 = "ADCE"
         self.correct_editstep5 = 3
 
-        self.x6 = 'A'*10
-        self.y6 = ''
+        self.x6 = "A" * 10
+        self.y6 = ""
         self.correct_editstep6 = 10
 
-        self.x7 = ''
-        self.y7 = 'A' * 10
+        self.x7 = ""
+        self.y7 = "A" * 10
         self.correct_editstep7 = 10
 
-        self.x8 = 'TGACGTGC'
-        self.y8 = 'TCGACGTCA'
+        self.x8 = "TGACGTGC"
+        self.y8 = "TCGACGTCA"
         self.correct_editstep8 = 3
 
-        self.x9 = 'XYZ'
-        self.y9 = 'XKZ'
-        self.correct_solution9 = ['align_X', 'align_K', 'align_Z']
+        self.x9 = "XYZ"
+        self.y9 = "XKZ"
+        self.correct_solution9 = ["align_X", "align_K", "align_Z"]
 
-        self.x10 = 'XX'
-        self.y10 = ''
-        self.correct_solution10 = ['remove_X', 'remove_X']
+        self.x10 = "XX"
+        self.y10 = ""
+        self.correct_solution10 = ["remove_X", "remove_X"]
 
-        self.x11 = ''
-        self.y11 = 'XX'
-        self.correct_solution11 = ['insert_X', 'insert_X']
+        self.x11 = ""
+        self.y11 = "XX"
+        self.correct_solution11 = ["insert_X", "insert_X"]
 
     def test_simplecase(self):
         sequence_align = SequenceAlignment(self.x1, self.y1)
@@ -110,6 +111,7 @@ class test_sequence_alignment(unittest.TestCase):
         _, solution = sequence_align.alignment()
         self.assertEqual(self.correct_solution11, solution)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     print("Running Sequence Alignment tests:")
     unittest.main()

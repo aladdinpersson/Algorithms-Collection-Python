@@ -7,7 +7,8 @@
 
 # Improvement: Want to implement using heap datastructure
 
-def load_graph(path = 'edges.txt'):
+
+def load_graph(path="edges.txt"):
     edge_list = []
 
     with open(path) as f:
@@ -15,10 +16,11 @@ def load_graph(path = 'edges.txt'):
         num_nodes, num_edges = [int(i) for i in lines[0].split()]
 
         for line in lines[1:]:
-            node1,node2,edge_cost = [int(i) for i in line.split()]
-            edge_list.append( (node1,node2,edge_cost))
+            node1, node2, edge_cost = [int(i) for i in line.split()]
+            edge_list.append((node1, node2, edge_cost))
 
     return edge_list, num_nodes, num_edges
+
 
 def prims_algo(edge_list, num_nodes):
     X = []
@@ -31,7 +33,7 @@ def prims_algo(edge_list, num_nodes):
     V.remove(start)
 
     while len(V) != 0:
-        lowest_cost = float('inf')
+        lowest_cost = float("inf")
         nodeX = None
         nodeV = None
 
@@ -57,11 +59,9 @@ def prims_algo(edge_list, num_nodes):
     return E, total_cost
 
 
-if __name__ == '__main__':
-    print('Computing minimal spanning tree using Prims Algorithm')
+if __name__ == "__main__":
+    print("Computing minimal spanning tree using Prims Algorithm")
 
     edge_list, num_nodes, num_edges = load_graph()
 
     E, tot_cost = prims_algo(edge_list, num_nodes)
-
-

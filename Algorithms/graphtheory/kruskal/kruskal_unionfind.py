@@ -5,17 +5,18 @@
 
 from unionfind import unionfind
 
-def load_graph(file='edges.txt'):
+
+def load_graph(file="edges.txt"):
     G = []
 
     try:
-        f = open(file, 'r')
+        f = open(file, "r")
     except IOError:
-        raise("File does not exist!")
+        raise ("File does not exist!")
 
     line_list = f.readlines()
 
-    num_nodes, num_edges = map(int,line_list[0].split())
+    num_nodes, num_edges = map(int, line_list[0].split())
 
     for line in line_list[1:]:
         G.append(tuple(map(int, line.split()))[::-1])
@@ -30,23 +31,24 @@ def kruskal(G, num_nodes):
     for each_edge in G:
         cost, to_node, from_node = each_edge[0], each_edge[1], each_edge[2]
 
-        if not uf.issame(from_node-1, to_node-1):
+        if not uf.issame(from_node - 1, to_node - 1):
             tot_cost += cost
-            uf.unite(from_node-1, to_node-1)
+            uf.unite(from_node - 1, to_node - 1)
             MST.append((from_node, to_node, cost))
 
     return MST, tot_cost
 
-if __name__ == '__main__':
-    print('---- Computing minimal spanning tree using Kruskal\'s Algorithm ----')
+
+if __name__ == "__main__":
+    print("---- Computing minimal spanning tree using Kruskal's Algorithm ----")
     print()
 
     G, num_nodes = load_graph()
 
-    print(f'Our loaded graph is: {G}')
+    print(f"Our loaded graph is: {G}")
     print()
 
     MST, total_cost = kruskal(G)
 
-    print(f'Our minimum spanning tree is: {MST}')
-    print(f'Total cost is: {total_cost}')
+    print(f"Our minimum spanning tree is: {MST}")
+    print(f"Total cost is: {total_cost}")

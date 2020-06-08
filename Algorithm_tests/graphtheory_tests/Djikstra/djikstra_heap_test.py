@@ -4,12 +4,13 @@ import unittest
 
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
-sys.path.append('Algorithms/graphtheory/dijkstra/')
+sys.path.append("Algorithms/graphtheory/dijkstra/")
 
 # If run from local:
-#sys.path.append('../../../Algorithms/graphtheory/dijkstra/')
+# sys.path.append('../../../Algorithms/graphtheory/dijkstra/')
 
 from heapdijkstra import dijkstra
+
 
 class test_Dijkstra(unittest.TestCase):
     def setUp(self):
@@ -17,11 +18,11 @@ class test_Dijkstra(unittest.TestCase):
         self.correct_path1 = []
         self.correct_dist1 = float("inf")
 
-        self.G2 = {1:{2:1, 4:10}, 2:{3:15}, 3:{6:5}, 4:{5:1}, 5:{6:1}, 6: {}}
-        self.correct_path2 = [1,4,5,6]
+        self.G2 = {1: {2: 1, 4: 10}, 2: {3: 15}, 3: {6: 5}, 4: {5: 1}, 5: {6: 1}, 6: {}}
+        self.correct_path2 = [1, 4, 5, 6]
         self.correct_dist2 = 12
 
-        self.G3 = {1: {2: 1, 4: 10}, 2: {3: 15}, 3: {}, 4: {5:1}, 5: {}, 6: {}}
+        self.G3 = {1: {2: 1, 4: 10}, 2: {3: 15}, 3: {}, 4: {5: 1}, 5: {}, 6: {}}
         self.correct_path3 = []
         self.correct_dist3 = float("inf")
 
@@ -49,6 +50,7 @@ class test_Dijkstra(unittest.TestCase):
         self.assertEqual(distances[5], self.correct_dist4)
         self.assertEqual(path_to_take, self.correct_path4)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     print("Running Djikstra tests:")
     unittest.main()

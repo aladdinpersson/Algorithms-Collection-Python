@@ -6,6 +6,7 @@
 # Programmed by Aladdin Persson
 #   2019-02-19 Initial programming
 
+
 def gcd_recursive(a, b):
     if b == 0:
         return a
@@ -13,11 +14,12 @@ def gcd_recursive(a, b):
         return gcd_recursive(b, a % b)
 
 
-def gcd_iterative(a,b):
+def gcd_iterative(a, b):
     while b != 0:
-        a, b = b, a%b
+        a, b = b, a % b
 
     return a
 
-if __name__ == '__main__':
-    print(gcd_iterative(65,14))
+
+if __name__ == "__main__":
+    print(gcd_iterative(65, 14))

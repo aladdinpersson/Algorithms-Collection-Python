@@ -1,31 +1,34 @@
-'''
+"""
 Kruskal's algorithm for finding minimal spanning tree (MST) of a graph.
 
 Aladdin Persson <aladdin.persson at hotmail dot com>
     2019-02-16 Initial programming
 
-'''
+"""
 
 import sys
-sys.path.append('../depth-first-search')
+
+sys.path.append("../depth-first-search")
 from DFS_stack_iterative import DFS
 
-def load_graph(file='edges.txt'):
+
+def load_graph(file="edges.txt"):
     G = []
 
     try:
-        f = open(file, 'r')
+        f = open(file, "r")
     except IOError:
-        raise("File does not exist!")
+        raise ("File does not exist!")
 
     line_list = f.readlines()
 
-    num_nodes, num_edges = map(int,line_list[0].split())
+    num_nodes, num_edges = map(int, line_list[0].split())
 
     for line in line_list[1:]:
         G.append(tuple(map(int, line.split()))[::-1])
 
     return sorted(G), num_nodes
+
 
 def kruskal(G, num_nodes):
     MST = []
@@ -53,14 +56,14 @@ def kruskal(G, num_nodes):
     return MST, tot_cost
 
 
-if __name__ == '__main__':
-    print('---- Computing minimal spanning tree using Kruskal\'s Algorithm ----')
+if __name__ == "__main__":
+    print("---- Computing minimal spanning tree using Kruskal's Algorithm ----")
     print()
 
     G, num_nodes = load_graph()
 
-    print(f'Our loaded graph is: {G}')
+    print(f"Our loaded graph is: {G}")
     MST, total_cost = kruskal(G)
 
-    print(f'Our minimum spanning tree is: {MST}')
-    print(f'Total cost is: {total_cost}')
+    print(f"Our minimum spanning tree is: {MST}")
+    print(f"Total cost is: {total_cost}")

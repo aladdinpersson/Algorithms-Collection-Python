@@ -1,4 +1,4 @@
-'''
+"""
 Weighted Interval Scheduling
 Explained YouTube video: https://www.youtube.com/watch?v=iIX1YvbLbvc
 Implementation walkthrough video: https://www.youtube.com/watch?v=dU-coYsd7zw
@@ -8,13 +8,14 @@ Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
   2020-03-28 Cleaned up code by making WeightedIntervalScheduling class
 
 Time complexity: O(nlogn)
-'''
+"""
 
 import bisect
 
+
 class WeightedIntervalScheduling(object):
     def __init__(self, I):
-        self.I = sorted(I, key = lambda tup : tup[1]) #(key = lambda tup : tup[1])
+        self.I = sorted(I, key=lambda tup: tup[1])  # (key = lambda tup : tup[1])
         self.OPT = []
         self.solution = []
 
@@ -50,7 +51,9 @@ class WeightedIntervalScheduling(object):
             return self.OPT[j]
 
         else:
-            return max(self.I[j][2] + self.compute_opt(self.p[j]), self.compute_opt(j - 1))
+            return max(
+                self.I[j][2] + self.compute_opt(self.p[j]), self.compute_opt(j - 1)
+            )
 
     def weighted_interval(self):
         if len(self.I) == 0:
@@ -65,6 +68,7 @@ class WeightedIntervalScheduling(object):
         self.find_solution(len(self.I) - 1)
 
         return self.OPT[-1], self.solution[::-1]
+
 
 # Small Example
 # if __name__ == '__main__':
