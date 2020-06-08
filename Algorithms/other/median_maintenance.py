@@ -14,13 +14,14 @@
 
 import heapq
 
+
 class Maintain_Median(object):
     def __init__(self):
         self.maxheap = []
         self.minheap = []
 
     def medmain_insert(self, x):
-        if (len(self.maxheap) == 0):
+        if len(self.maxheap) == 0:
             heapq.heappush(self.maxheap, -x)
 
         else:
@@ -39,8 +40,11 @@ class Maintain_Median(object):
                     y = -heapq.heappop(self.maxheap)
                     heapq.heappush(self.minheap, y)
 
-        return (-self.maxheap[0] + self.minheap[0])/2 if len(self.maxheap) == len(self.minheap) else -self.maxheap[0]
-
+        return (
+            (-self.maxheap[0] + self.minheap[0]) / 2
+            if len(self.maxheap) == len(self.minheap)
+            else -self.maxheap[0]
+        )
 
     def main(self, data):
         if len(data) < 1:
@@ -51,7 +55,8 @@ class Maintain_Median(object):
 
         return median
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     data = [1, 3, 8, 5, 10]
     maintain_median = Maintain_Median()
     median = maintain_median.main(data)

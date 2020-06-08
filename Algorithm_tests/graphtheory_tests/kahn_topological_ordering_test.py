@@ -4,13 +4,14 @@ import unittest
 
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
-sys.path.append('Algorithms/graphtheory/kahns-toposort/')
+sys.path.append("Algorithms/graphtheory/kahns-toposort/")
 
 # If run from local:
-#sys.path.append('../../Algorithms/graphtheory/kahns-toposort')
+# sys.path.append('../../Algorithms/graphtheory/kahns-toposort')
 
 from kahn_topological_ordering import topological_ordering
 from collections import defaultdict
+
 
 class test_TopologicalOrdering(unittest.TestCase):
     def setUp(self):
@@ -19,18 +20,30 @@ class test_TopologicalOrdering(unittest.TestCase):
         self.correct_isDAG1 = False
         self.correct_path1 = []
 
-        self.G2 = {'1': ['2'], '2':['3'], '3':['4'], '4':['5'], '5' : []}
-        self.degree_incoming2 = defaultdict(int, {'2':1, '3':1, '4':1, '5':1})
+        self.G2 = {"1": ["2"], "2": ["3"], "3": ["4"], "4": ["5"], "5": []}
+        self.degree_incoming2 = defaultdict(int, {"2": 1, "3": 1, "4": 1, "5": 1})
         self.correct_isDAG2 = True
-        self.correct_path2 = ['1', '2', '3', '4', '5']
+        self.correct_path2 = ["1", "2", "3", "4", "5"]
 
-        self.G3 = {'1': ['2', '3', '4', '5'], '2': ['3', '4', '5'], '3': ['4','5'], '4': ['5'], '5': []}
-        self.degree_incoming3 = defaultdict(int, {'2': 1, '3': 2, '4': 3, '5': 4})
+        self.G3 = {
+            "1": ["2", "3", "4", "5"],
+            "2": ["3", "4", "5"],
+            "3": ["4", "5"],
+            "4": ["5"],
+            "5": [],
+        }
+        self.degree_incoming3 = defaultdict(int, {"2": 1, "3": 2, "4": 3, "5": 4})
         self.correct_isDAG3 = True
-        self.correct_path3 = ['1', '2', '3', '4', '5']
+        self.correct_path3 = ["1", "2", "3", "4", "5"]
 
-        self.G4 = {'1': ['2', '3', '4', '5'], '2': ['3', '4', '5'], '3': ['2', '4', '5'], '4': ['5'], '5': []}
-        self.degree_incoming4 = defaultdict(int, {'2': 2, '3': 2, '4': 3, '5': 4})
+        self.G4 = {
+            "1": ["2", "3", "4", "5"],
+            "2": ["3", "4", "5"],
+            "3": ["2", "4", "5"],
+            "4": ["5"],
+            "5": [],
+        }
+        self.degree_incoming4 = defaultdict(int, {"2": 2, "3": 2, "4": 3, "5": 4})
         self.correct_isDAG4 = False
         self.correct_path4 = []
 
@@ -55,6 +68,6 @@ class test_TopologicalOrdering(unittest.TestCase):
         self.assertEqual(is_DAG, self.correct_isDAG4)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("Running Topological Ordering tests:")
     unittest.main()

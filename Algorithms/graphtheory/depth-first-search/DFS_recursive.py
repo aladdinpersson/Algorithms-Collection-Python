@@ -4,22 +4,24 @@
 # Programmed by Aladdin Persson <aladdin.persson at hotmail dot com>
 #   2019-02-16 Initial programming
 
+
 def DFS(G, curr_node, visited):
-    '''
+    """
     :param G: G = {from_node1:[to_node1, to_node2], from_node2: [to_node,] etc}
     :param curr_node: Node currently at, run from beginning this is the starting node
     :param visited: since it is recursive, visited is updated and needs to be sent in on recursive call
     :return: visited is initialized outside of DFS and updates this boolean array with which nodes has been visited
-    '''
+    """
     if visited[curr_node - 1]:
         return
 
-    visited[curr_node-1] = True
+    visited[curr_node - 1] = True
 
     neighbours = G[curr_node]
 
     for next_node in neighbours:
         DFS(G, next_node, visited)
+
 
 # Small Eaxmple
 # if __name__ == '__main__':

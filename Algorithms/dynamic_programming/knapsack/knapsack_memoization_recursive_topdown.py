@@ -8,36 +8,38 @@
 #   2019-02-28 Initial programming
 #   2019-03-04 Made code cleaner and included a tracking of which items to choose
 
+
 def knapsack(n, C, W, v, items, arr):
     # if n == 0 we cannot index further (since we look at n-1), further if we have no more capacity
     # then we cannot obtain more objects
     if n == 0 or C == 0:
         return 0, []
 
-    elif arr[n-1][C-1] != None:
-        return arr[n-1][C-1], items
+    elif arr[n - 1][C - 1] != None:
+        return arr[n - 1][C - 1], items
 
     # If the weight is higher than our capacity then we can't pick it
-    elif W[n-1] > C:
-        result,items = knapsack(n-1,C, W, v, items, arr)
+    elif W[n - 1] > C:
+        result, items = knapsack(n - 1, C, W, v, items, arr)
 
     # Recursively search through all choices
     else:
-        tmp1,items1 = knapsack(n-1,C,W,v,items, arr) # exclude item
-        tmp2,items2 = knapsack(n-1,C - W[n-1], W, v, items, arr) # include item
+        tmp1, items1 = knapsack(n - 1, C, W, v, items, arr)  # exclude item
+        tmp2, items2 = knapsack(n - 1, C - W[n - 1], W, v, items, arr)  # include item
 
         items = items2 + [n - 1] if (tmp2 + v[n - 1] > tmp1) else items1
 
         result = max(tmp1, tmp2 + v[n - 1])
 
-    arr[n-1][C-1]=result
+    arr[n - 1][C - 1] = result
 
     return result, items
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     # Run a small example
-    weight = [1,2,4,2,5]
-    value = [5,3,5,3,2]
+    weight = [1, 2, 4, 2, 5]
+    value = [5, 3, 5, 3, 2]
     num_objects = len(weight)
     capacity = 3
 

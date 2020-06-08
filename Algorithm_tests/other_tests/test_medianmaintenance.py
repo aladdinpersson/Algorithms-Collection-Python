@@ -1,12 +1,13 @@
 # Import packages
 import sys
 import unittest
+
 # For importing from different folders
 # OBS: This is supposed to be done with automated testing, hence relative to folder we want to import from
-sys.path.append('Algorithms/other')
+sys.path.append("Algorithms/other")
 
 # If run from local:
-#sys.path.append('../../Algorithms/other')
+# sys.path.append('../../Algorithms/other')
 
 from median_maintenance import Maintain_Median
 
@@ -27,7 +28,6 @@ class MyTestCase(unittest.TestCase):
 
         self.data5 = [1, 10, 2, 9, 11, 4, 6, 5, 3, 8, 7]
         self.correct5 = 6
-
 
     def test_basic(self):
         maintain_median = Maintain_Median()
@@ -55,6 +55,5 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(median, self.correct5)
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
