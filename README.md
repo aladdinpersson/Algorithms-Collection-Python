@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/AladdinPerzon/Algorithms-Collection-Python.svg?branch=master)](https://travis-ci.com/AladdinPerzon/Algorithms-Collection-Python) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![codecov](https://codecov.io/gh/AladdinPerzon/Algorithms-Collection-Python/branch/master/graph/badge.svg)](https://codecov.io/gh/AladdinPerzon/Algorithms-Collection-Python)
+[![Build Status](https://travis-ci.com/AladdinPersson/Algorithms-Collection-Python.svg?branch=master)](https://travis-ci.com/AladdinPersson/Algorithms-Collection-Python) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![codecov](https://codecov.io/gh/AladdinPerzon/Algorithms-Collection-Python/branch/master/graph/badge.svg)](https://codecov.io/gh/AladdinPerzon/Algorithms-Collection-Python)
 
 # Algorithms Collection Python
 Whenever I face an interesting problem I document the algorithm that I learned to solve it. The goals of this repository is to have clean, efficient and most importantly correct code.
